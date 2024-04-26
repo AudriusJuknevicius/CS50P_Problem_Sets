@@ -2,6 +2,6 @@
 
 def slowdown():
     userinput = input("State your five favourite places! ")
-    print(userinput, sep='...')
+    print(userinput, sep="...")
 
 slowdown()
