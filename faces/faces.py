@@ -3,7 +3,10 @@
 
 Def main():
 
-    convert = input("Enter a sad/happy emoji! ", ).replace(":)","🙂",":(","🙁")
+    convert = input("Enter a sad or a happy emoji! ")
+
+    convert = convert.replace(":)","🙂")
+    convert = convert.replace(":(","🙁")
     print(convert)
 
 main()
