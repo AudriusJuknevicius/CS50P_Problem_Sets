@@ -2,7 +2,6 @@
 
 def slowdown():
     userinput = input("Can you tell me the sea shore saying really quickly? ")
-    ' ' = "..."
-    print(userinput)
+    print(userinput, sep="...")
 
 slowdown()
