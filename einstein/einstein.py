@@ -4,7 +4,7 @@ def einstein():
 
     mass = int(input("Please input the mass "))
 
-    sol = 300000000**
+    sol = 300000000**2
 
     print(sol * mass)
 
