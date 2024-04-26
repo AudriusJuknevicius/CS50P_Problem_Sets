@@ -6,7 +6,7 @@ def einstein ():
 
     sol = int(300000000)
 
-    print(j = sol * mass)
+    print(sol * mass)
 
 
     einstein ()
