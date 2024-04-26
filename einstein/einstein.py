@@ -1,6 +1,6 @@
 # E = mc2. Implementing a program that prompts for mass as integer and then outputs equivelent number in Joules as integer.
 
-def einstein ():
+def einstein():
 
     mass = int(input("Please input the mass "))
 
@@ -9,5 +9,5 @@ def einstein ():
     print(sol * mass)
 
 
-    einstein ()
+einstein()
 
