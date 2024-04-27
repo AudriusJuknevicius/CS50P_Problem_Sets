@@ -6,4 +6,10 @@
 
 
 def main():
-    greeting = input(")
+    greeting = input("Greeting: ").lower()
+
+    
+
+
+
+main()
