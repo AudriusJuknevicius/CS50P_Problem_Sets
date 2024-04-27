@@ -3,20 +3,20 @@
 #Output media type depending on the ending suffix for example cat.gif = image/gif.
 
 def main():
-    type = input("File name: ").lower().strip()
+    ftype = input("File name: ").lower().strip()
 
-    match type:
-        case type.endswith(".gif"):
+    match ftype:
+        case ftype.endswith(".gif"):
             print("image/gif")
-        case type.endswith(".jpg") | type.endswith(".jpeg"):
+        case ftype.endswith(".jpg") | ftype.endswith(".jpeg"):
             print("image/jpeg")
-        case type.endswith(".png"):
+        case ftype.endswith(".png"):
             print("image/png")
-        case type.endswith(".pdf"):
+        case ftype.endswith(".pdf"):
             print("application/pdf")
-        case type.endswith(".txt"):
+        case ftype.endswith(".txt"):
             print("text/plain")
-        case type.endswith(".zip"):
+        case ftype.endswith(".zip"):
             print("application/zip")
         case _:
             print("application/octet-stream")
