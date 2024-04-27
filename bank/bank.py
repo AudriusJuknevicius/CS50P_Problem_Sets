@@ -8,7 +8,7 @@
 def main():
     greeting = input("Greeting: ").lower()
 
-    
+    greeting.startswith(hello)
 
 
 
