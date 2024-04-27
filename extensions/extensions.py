@@ -5,8 +5,21 @@
 def main():
     ftype = input("File name: ").lower().strip()
 
-        if ftype.find()
-            print("image/gif")
+    if ".gif" in ftype:
+          print("image/gif")
+    elif ".jpg" or "jpeg" in ftype:
+          print("image/jpeg")
+    elif ".png" in ftype:
+          print("image/png")
+    elif ".pdf" in ftype:
+         print("application/pdf")
+    elif ".txt" in ftype:
+        print("text/plain")
+    elif ".zip" in ftype:
+          print("application/zip")
+    else:
+        print("application/octet-stream")
+
 
 
 
