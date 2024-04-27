@@ -5,20 +5,23 @@
 def main():
     ftype = input("File name: ").lower().strip()
 
-        if ftype.endswith(".gif"):
+        if ftype.find()
             print("image/gif")
-        case ftype.endswith(".jpg") | ftype.endswith(".jpeg"):
-            print("image/jpeg")
-        case ftype.endswith(".png"):
-            print("image/png")
-        case ftype.endswith(".pdf"):
-            print("application/pdf")
-        case ftype.endswith(".txt"):
-            print("text/plain")
-        case ftype.endswith(".zip"):
-            print("application/zip")
-        case _:
-            print("application/octet-stream")
+
+
+
+        # case ftype.endswith(".jpg") | ftype.endswith(".jpeg"):
+        #     print("image/jpeg")
+        # case ftype.endswith(".png"):
+        #     print("image/png")
+        # case ftype.endswith(".pdf"):
+        #     print("application/pdf")
+        # case ftype.endswith(".txt"):
+        #     print("text/plain")
+        # case ftype.endswith(".zip"):
+        #     print("application/zip")
+        # case _:
+        #     print("application/octet-stream")
 
 
 main()
