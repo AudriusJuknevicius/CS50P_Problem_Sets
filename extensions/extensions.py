@@ -6,6 +6,7 @@ def main():
     type = input("File name: ").lower().strip()
 
     match type:
-        case 
+        case type.endswith(".gif")
+            print("image/gif")
 
 
