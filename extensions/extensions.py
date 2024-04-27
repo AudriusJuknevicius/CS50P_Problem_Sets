@@ -5,8 +5,7 @@
 def main():
     ftype = input("File name: ").lower().strip()
 
-    match ftype:
-        case ftype(".gif"):
+        if ftype.endswith(".gif"):
             print("image/gif")
         case ftype.endswith(".jpg") | ftype.endswith(".jpeg"):
             print("image/jpeg")
