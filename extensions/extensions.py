@@ -7,7 +7,7 @@ def main():
 
     if ".gif" in ftype:
           print("image/gif")
-    elif ".jpg" or "jpeg" in ftype:
+    elif ".jpg" in ftype or "jpeg" in ftype:
           print("image/jpeg")
     elif ".png" in ftype:
           print("image/png")
