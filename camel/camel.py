@@ -6,9 +6,11 @@
 def main():
     camelCase = input("camelCase: ")
 
-    if len(parts) <1:
+    name = finder(camelCase)
+
+    if len(name) <1:
         print(camelCase)
-    elif len(finder) >1:
+    elif len(name) >1:
         print("parts",sep="_")
 
 
