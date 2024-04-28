@@ -8,7 +8,7 @@ def main():
     parts = finder(camelCase)
 
     if len(parts) <2:
-        print("Snake Case:",parts)
+        print("Snake Case:",camelCase)
     elif len(parts) >2:
         print("Snake Case:",parts)
 
