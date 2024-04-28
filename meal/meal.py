@@ -9,11 +9,11 @@ def convert(time):
     return time_24h
 
 def main():
-    time_input = input("What time is it? ")
+    time_input = input("What time is it? ").strip()
     time_24h = convert(time_input)
 
     if 7.0 <= time_24h <= 8.0:
-        print("breakfest time")
+        print("breakfast time")
     # elif time_24h >= 12.0 and <= 13.0:
     #     print("lunch time")
     # elif time_24h >= 18.0 and <= 19.0:
