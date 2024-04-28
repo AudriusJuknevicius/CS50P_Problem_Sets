@@ -10,7 +10,7 @@ def main():
     if len(parts) < 2:
         print(camelCase)
     elif len(parts) > 1:
-        snake_case = "_".join(parts)
+        snake_case = "_".join(parts).lower()
         print(snake_case)
 
 
