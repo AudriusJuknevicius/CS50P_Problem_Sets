@@ -8,6 +8,7 @@ def main():
         for fdr.isupper() in fdr:
             return fdr
 
-    def capitalisation(c)
-        for c in c.isupper():
-            return
+    def capitalisation(c):
+        while false:
+            for c in c.isupper():
+                return
