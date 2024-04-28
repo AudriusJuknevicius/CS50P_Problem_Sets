@@ -10,4 +10,4 @@ def main():
 
     def capitalisation(c)
         for c in c.isupper():
-
+            return
