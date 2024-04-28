@@ -10,19 +10,8 @@ def main():
 
 
 
-
-
-
-
-    def capitalisation(c):
-        while false:
-            for c in c.isupper():
-                return
-
-
-
 def main():
     camelCase = input("camelCase: ")
     names = finder(camelCase)
-    names = finder(camelCase) 
+    names = finder(camelCase)
     print("names",sep="_")
