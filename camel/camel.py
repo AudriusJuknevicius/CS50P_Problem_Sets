@@ -5,7 +5,6 @@
 
 def main():
     camelCase = input("camelCase: ")
-
     name = finder(camelCase)
 
     if len(name) <1:
