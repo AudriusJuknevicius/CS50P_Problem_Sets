@@ -5,7 +5,10 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
-    
+    float = x and z
+
+    if y == "+":
+        print(x+z)
 
 
 
