@@ -9,10 +9,13 @@ def main():
 def convert(time):
     hours = float(time)
     minutes = float((time - hours) * 60)
-    
+
+    time_24h = hours + minutes
+
+    return time_24h
 
 
-    if time_24h
+print(time_24h)
 
 
 # if __name__ == "__main__":
