@@ -4,7 +4,7 @@
 
 
 def convert(time):
-    hours, minutes = float(time.split(":"))
+    hours, minutes = map(float, time.split(":"))
     time_24h = hours + (minutes / 60)
     return time_24h
 
