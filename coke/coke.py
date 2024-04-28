@@ -6,9 +6,10 @@
 # Assume that the user will only input integers, and ignore any integer that isn’t an accepted denomination.
 
 def coke():
-    inserted = int(input("Insert Coin: "))
-    if inserted = 0.05, 0.10, 0.25:
+    while true:
+        inserted = int(input("Insert Coin: "))
+        if inserted = 0.05, 0.10, 0.25:
         continue
     else:
-        
+
         amount = deno
