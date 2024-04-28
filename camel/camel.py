@@ -18,6 +18,6 @@ def finder(s):
         if char.isupper():
             parts = s.split(char)
             return parts
-        return [s]
+    return [s]
 
 main()
