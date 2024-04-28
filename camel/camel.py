@@ -8,7 +8,7 @@ def main():
     name = finder(camelCase)
 
     if len(name) <1:
-        print("Snake Case: ",camelCase)
+        print("Snake Case: ",name)
     elif len(name) >1:
         print("Snake Case: ",name,sep="_")
 
@@ -18,6 +18,6 @@ def finder(s):
         if char.isupper():
             parts = s.split(char)
             return parts
-        return s
+        return [s]
 
 main()
