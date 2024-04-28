@@ -5,5 +5,6 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
-    x = 
+
+main()
 
