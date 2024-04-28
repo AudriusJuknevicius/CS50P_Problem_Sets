@@ -3,15 +3,13 @@
 # Interpreter is a program that prompts the user for an arithmetic expression and then calculates the output.
 
 def main():
-    x, y, z = input("Expression: ").split(" ")
+    x, y, z = float(input("Expression: ")).split(" ")
 
-    float(x)
-    float(z)
 
     if y == "+" :
         print(x+z)
-    elif y == "-":
-        print(x = z)
+    # elif y == "-":
+    #     print(x = z)
 
 
 main()
