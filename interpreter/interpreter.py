@@ -14,7 +14,7 @@ def main():
         print(f"{x - z:.2}")
     elif y == "*":
         print(f"{x * z:.2}")
-    elif y == "/":
+    else:
         print(f"{x / z:.2}")
 
 
