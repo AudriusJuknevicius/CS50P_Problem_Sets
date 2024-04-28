@@ -8,9 +8,9 @@ def main():
     x = float
     z = float
 
-    if y = + :
-        print(x + z)
-    elif y = "-":
+    if y == "+" :
+        print(x+z)
+    elif y == "-":
         print(x = z)
 
 
