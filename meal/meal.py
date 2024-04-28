@@ -4,7 +4,7 @@
 
 
 def main():
-    time_24h = convert(input("What time is it? ")).split(":")
+    time_24h = convert(input("What time is it? "))
 
 def convert(time):
     hours = float(time)
