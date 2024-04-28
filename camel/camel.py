@@ -9,9 +9,9 @@ def main():
     name = finder(camelCase)
 
     if len(name) <1:
-        print(camelCase)
+        print("Snake Case: ",camelCase)
     elif len(name) >1:
-        print(parts,sep="_")
+        print("Snake Case: ",name,sep="_")
 
 
 def finder(s):
