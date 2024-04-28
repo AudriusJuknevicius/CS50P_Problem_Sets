@@ -2,4 +2,5 @@
 # Implement a program that promts the user for camel case and the program outputs the corresponding name in snake case.
 
 def main():
-    
+    camelCase = input("camelCase: ").split(isupper())
+
