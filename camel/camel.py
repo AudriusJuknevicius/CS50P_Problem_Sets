@@ -7,10 +7,10 @@ def main():
     camelCase = input("camelCase: ")
     parts = finder(camelCase)
 
-    if len(parts) <2:
-        print("Snake Case:",camelCase)
-    elif len(parts) >2:
-        print("Snake Case:",parts)
+    if len(parts) < 2:
+        print("Snake Case:", camelCase)
+    elif len(parts) > 1:
+        print("Snake Case:", parts)
 
 
 def finder(s):
