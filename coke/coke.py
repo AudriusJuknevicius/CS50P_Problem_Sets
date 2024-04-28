@@ -9,7 +9,10 @@ def coke():
     while true:
         inserted = int(input("Insert Coin: "))
         if inserted = 5, 10, 25:
-        continue and z = 50 
+        continue and z = 50
     else:
 
-        amount = deno
+def check(m):
+    cokebottle = 50
+    insert = m
+
