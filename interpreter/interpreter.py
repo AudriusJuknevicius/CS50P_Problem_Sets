@@ -7,7 +7,9 @@ def main():
 
     float = (x) and (z)
 
-    print(x y z)
+    a = x y z
+
+    print(a)
 
 
     # if y == "+" :
