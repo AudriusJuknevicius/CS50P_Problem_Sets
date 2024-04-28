@@ -2,8 +2,9 @@
 # Implement a program that promts the user for camel case and the program outputs the corresponding name in snake case.
 
 def main():
-    camelCase = input("camelCase: ")
+    camelCase = finder(input("camelCase: "))
 
     def finder(fdr):
-        for fdr.isupper()
+        for fdr.isupper() in fdr:
+            return fdr
 
