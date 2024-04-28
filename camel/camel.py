@@ -14,10 +14,7 @@ def main():
 
 
 def finder(s):
-    for char in s:
-        if char.isupper():
-            parts = s.split(char)
-            return parts
-    return [s]
+    parts = re.findall(r'[A-Z][^A-Z]*', s)
+    return parts
 
 main()
