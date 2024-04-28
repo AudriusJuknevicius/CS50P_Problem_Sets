@@ -5,7 +5,7 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
-    float = x and z
+    float = (x) and (z)
 
     print(x y z)
 
