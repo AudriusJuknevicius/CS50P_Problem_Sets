@@ -10,14 +10,24 @@ def main():
     if len(parts) < 2:
         print("Snake Case:", camelCase)
     elif len(parts) > 1:
-        print("Snake Case:", ,sep="_")
+        snake_case = "_".join(parts)
+        print("Snake Case:", snake_case)
 
 
 def finder(s):
+    parts = []
+    current_part = ""
+
     for char in s:
-        if char.isupper():
-            parts = s.split(char)
-            return parts
-    return [s]
+        if char.isupper() and current_part:
+            parts.append(current_part)
+            current_part = char
+        else:
+            current_part += char
+
+    if current_part:
+        parts.append(current_part)
+
+    return parts
 
 main()
