@@ -4,15 +4,15 @@
 
 
 def main():
-    hours, minutes = convert(input("What time is it? ")).split(":")
+    time_24h = convert(input("What time is it? ")).split(":")
 
 def convert(time):
-    hours = float(time)
-    minutes = float((time - hours) * 60)
-    return hours, minutes
+    time_24h = float(time)
+    time_24h = float((time - hours) * 60)
+    return time
 
 
-print(hours, minutes)
+    if time_24h
 
 
 # if __name__ == "__main__":
