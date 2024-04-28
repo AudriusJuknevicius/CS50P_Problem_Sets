@@ -10,11 +10,14 @@ def main():
     if len(parts) < 2:
         print("Snake Case:", camelCase)
     elif len(parts) > 1:
-        print("Snake Case:", parts,sep="_")
+        print("Snake Case:", ,sep="_")
 
 
 def finder(s):
-    parts = re.findall(r'[A-Z][^A-Z]*', s)
-    return parts
+    for char in s:
+        if char.isupper():
+            parts = s.split(char)
+            return parts
+    return [s]
 
 main()
