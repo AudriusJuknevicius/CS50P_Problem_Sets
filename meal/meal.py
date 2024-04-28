@@ -7,9 +7,9 @@ def main():
     time_24h = convert(input("What time is it? ")).split(":")
 
 def convert(time):
-    time_24h = float(time)
-    time_24h = float((time - hours) * 60)
-    return time
+    hours = float(time)
+    minutes = float((time - hours) * 60)
+    
 
 
     if time_24h
