@@ -1,3 +1,5 @@
 
 
-def calculate_factorial
+def calculate_factorial(n):
+    n = input("Enter Number ")
+    while 
