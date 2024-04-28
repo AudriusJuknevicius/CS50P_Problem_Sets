@@ -12,15 +12,12 @@ def main():
     time_input = input("What time is it? ").strip()
     time_24h = convert(time_input)
 
-    print(time_24h)
-
-    # if 7.0 <= time_24h <= 8.0:
-    #     print("breakfast time")
-    # elif time_24h >= 12.0 and <= 13.0:
-    #     print("lunch time")
-    # elif time_24h >= 18.0 and <= 19.0:
-    #     print("dinner time")
-    # else: print("")
+    if 7.0 <= time_24h <= 8.0:
+        print("breakfast time")
+    elif 12.0 <= time_24h <= 13.0:
+        print("lunch time")
+    elif 18.0 <= time_24h <= 19.0:
+        print("dinner time")
 
     # def convert(time):
     # hours, minutes = time.split(":")
@@ -30,4 +27,5 @@ def main():
     # time_24h = hours + minutes
 
     # return time_24h
-main()
+if __name__ == "__main__":
+    main()
