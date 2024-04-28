@@ -4,10 +4,9 @@
 
 
 def main():
-    time_24h = convert(input("What time is it? "))
+    hours, minutes = convert(input("What time is it? ")).split(":")
 
     def convert(time):
-    hours, minutes = time.split(":")
     hours = float(time)
     minutes = float((time - hours) * 60)
 
