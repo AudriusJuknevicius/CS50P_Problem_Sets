@@ -11,7 +11,7 @@ def main():
     if len(name) <1:
         print(camelCase)
     elif len(name) >1:
-        print("parts",sep="_")
+        print(parts,sep="_")
 
 
 def finder(s):
