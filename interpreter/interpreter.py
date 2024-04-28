@@ -5,6 +5,14 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
+    x = float
+
+    y = + or - or * or /
+
+    z = float
+
+    print(xyz)
+
 
 main()
 
