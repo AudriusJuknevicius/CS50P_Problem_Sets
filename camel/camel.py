@@ -12,6 +12,7 @@ def main():
 
 def main():
     camelCase = input("camelCase: ")
+
     names = finder(camelCase)
     names = finder(camelCase)
     print("names",sep="_")
