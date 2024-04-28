@@ -7,5 +7,8 @@
 
 def coke():
     inserted = int(input("Insert Coin: "))
-    if 0.05, 0.10, 0.25 == inserted:
+    if inserted = 0.05, 0.10, 0.25:
+        continue
+    else:
+        
         amount = deno
