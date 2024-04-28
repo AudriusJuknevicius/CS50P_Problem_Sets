@@ -5,23 +5,17 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
-    float(x)
-    float(z)
+    x = float(x)
+    z = float(z)
 
     if y == "+":
         print(f"{x + z:.2}")
-
-
-    # if y == "=":
-    #     print(x+z)
-    # elif y == "-":
-    #     print(x-z)
-
-
-    # if y == "+" :
-    #     print(x+z)
-    # elif y == "-":
-    #     print(x = z)
+    elif y == "-":
+        print(f"{x - z:.2}")
+    elif y == "*":
+        print(f"{x * z:.2}")
+    elif y == "/":
+        print(f"{x / z:.2}")
 
 
 main()
