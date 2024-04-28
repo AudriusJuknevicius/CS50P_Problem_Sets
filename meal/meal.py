@@ -8,8 +8,9 @@ def main():
 
 def convert(time):
     time = float(time)
-    
 
+def _main_():
+    
 
 if __name__ == "__main__":
     main()
