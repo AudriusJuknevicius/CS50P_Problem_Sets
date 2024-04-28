@@ -5,7 +5,7 @@ def main():
     camelCase = Snakecase(input("camelCase: "))
 
     def Snakecase(b):
-        b = b.count(isupper(b))
+        input = b.count(isupper(b))
         if b == 0:
             print(b)
         # elif b ==
