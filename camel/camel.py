@@ -10,8 +10,8 @@ def main():
     if len(parts) < 2:
         print("Snake Case:", camelCase)
     elif len(parts) > 1:
-        snake_case = join(parts)
-        print("Snake Case:", snake_case)
+        snake_case = parts.join()
+        print("Snake Case:", snake_case,sep="_")
 
 
 def finder(s):
