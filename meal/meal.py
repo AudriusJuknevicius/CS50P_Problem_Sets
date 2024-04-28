@@ -4,11 +4,11 @@
 
 
 def main():
-    time = input("What time is it? ")
-
+    hour, minute = convert(input("What time is it? ")).split(":")
 
 def convert(time):
-    ...
+    time = float(time)
+    
 
 
 if __name__ == "__main__":
