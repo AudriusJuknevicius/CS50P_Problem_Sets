@@ -10,7 +10,7 @@ def main():
     if len(parts) < 2:
         print("Snake Case:", camelCase)
     elif len(parts) > 1:
-        snake_case = parts.join()
+        snake_case = p.join()
         print("Snake Case:", snake_case,sep="_")
 
 
@@ -19,7 +19,6 @@ def finder(s):
         if char.isupper():
             parts = s.split(char)
             return parts
-        else:
-            return s
+    return [s]
 
 main()
