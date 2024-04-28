@@ -6,7 +6,9 @@ def main():
 
     def Snakecase(b):
         b = b.count(isupper(b))
-        b == 0:
-            print()
+        if b == 0:
+            print(b)
+        # elif b ==
+
 
 
