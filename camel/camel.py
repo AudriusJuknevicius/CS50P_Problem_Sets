@@ -8,3 +8,6 @@ def main():
         for fdr.isupper() in fdr:
             return fdr
 
+    def capitalisation(c)
+        for c in c.isupper():
+
