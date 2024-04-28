@@ -7,10 +7,12 @@ def main():
 
     float = (x) and (z)
 
-    if y == "=":
-        print(x+z)
-    elif y == "-":
-        print(x-z)
+    print(xyz)
+
+    # if y == "=":
+    #     print(x+z)
+    # elif y == "-":
+    #     print(x-z)
 
 
     # if y == "+" :
