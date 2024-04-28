@@ -8,8 +8,8 @@
 def coke():
     while true:
         inserted = int(input("Insert Coin: "))
-        if inserted = 0.05, 0.10, 0.25:
-        continue
+        if inserted = 5, 10, 25:
+        continue and z = 50 
     else:
 
         amount = deno
