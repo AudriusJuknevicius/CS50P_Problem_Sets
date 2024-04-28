@@ -5,9 +5,11 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
-    float = (x) and (z)
+    float(x)
+    float(z)
 
-    print(f"{x:.1}")
+    if y == "+":
+        print(f"{x + z:.2}")
 
 
     # if y == "=":
