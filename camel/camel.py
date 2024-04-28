@@ -18,6 +18,7 @@ def finder(s):
         if char.isupper():
             parts = s.split(char)
             return parts
-        break
+        else:
+            break
 
 main()
