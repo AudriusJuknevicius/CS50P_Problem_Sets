@@ -2,8 +2,11 @@
 # Implement a program that promts the user for camel case and the program outputs the corresponding name in snake case.
 
 def main():
-    camelCase = input("camelCase: ")
+    camelCase = Snakecase(input("camelCase: "))
 
-    def bread(b)
-        
+    def Snakecase(b):
+        b = b.count(isupper(b))
+        b == 0:
+            print()
+
 
