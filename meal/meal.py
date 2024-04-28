@@ -12,8 +12,10 @@ def convert(time):
     return hours, minutes
 
 
+print(hours, minutes)
 
 
+# if __name__ == "__main__":
+#     main()
 
-if __name__ == "__main__":
-    main()
+main()
