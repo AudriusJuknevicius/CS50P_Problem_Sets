@@ -16,3 +16,11 @@ def main():
     names = finder(camelCase)
     names = finder(camelCase)
     print("names",sep="_")
+
+
+    def finder(s):
+        for char in s:
+            if char.isupper():
+                parts = s.split(char)
+                return parts
+            return [s]
