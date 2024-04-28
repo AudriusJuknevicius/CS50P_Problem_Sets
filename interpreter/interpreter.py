@@ -5,10 +5,14 @@
 def main():
     x, y, z = input("Expression: ").split(" ").split(" ")
 
-    x is float
-    z is float
+    x = float
+    z = float
 
-    print(x, y, z)
+    if y = + :
+        print(x + z)
+    elif y = "-":
+        print(x = z)
+
 
 main()
 
