@@ -19,13 +19,5 @@ def main():
     elif 18.0 <= time_24h <= 19.0:
         print("dinner time")
 
-    # def convert(time):
-    # hours, minutes = time.split(":")
-    # hours = float(hours)
-    # minutes = float((time - hours) * 60)
-
-    # time_24h = hours + minutes
-
-    # return time_24h
 if __name__ == "__main__":
     main()
