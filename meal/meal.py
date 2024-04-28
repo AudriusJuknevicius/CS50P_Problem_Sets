@@ -4,7 +4,7 @@
 
 
 def main():
-     = convert(input("What time is it? "))
+    time_24h = convert(input("What time is it? "))
 
     def convert(time):
     hours, minutes = time.split(":")
