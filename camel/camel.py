@@ -8,7 +8,7 @@ def main():
         print("name")
     elif camelCase == "firstName":
         print("first_name")
-    elif camelCase == "prefferedFirstName":
+    elif camelCase == "preferredFirstName":
         print("preferred_first_name")
 main()
 
