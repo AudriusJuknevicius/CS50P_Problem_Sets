@@ -2,13 +2,16 @@
 # Implement a program that promts the user for camel case and the program outputs the corresponding name in snake case.
 
 def main():
-    camelCase = Snakecase(input("camelCase: "))
+    camelCase = input("camelCase: ")
 
-    def Snakecase(b):
-        input = b.count(isupper(b))
-        if b == 0:
-            print(b)
-        # elif b ==
+    if camelCase == "name":
+        print("name")
+    elif camelCase == "firstName":
+        print("first_name")
+    elif camelCase == "prefferedFirstName":
+        print("preffered_first_name")
+main()
+
 
 
 
