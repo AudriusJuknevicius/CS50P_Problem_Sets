@@ -1,5 +1,5 @@
 
 
 def calculate_factorial(n):
-    n = input("Enter Number ")
+    n = int(input("Enter Number "))
     while 
