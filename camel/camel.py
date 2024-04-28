@@ -5,5 +5,5 @@ def main():
     camelCase = input("camelCase: ")
 
     def finder(fdr):
-        
+        for fdr.isupper()
 
