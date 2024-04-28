@@ -4,5 +4,6 @@
 def main():
     camelCase = input("camelCase: ")
 
-    def finder(fdr)
+    def finder(fdr):
         
+
