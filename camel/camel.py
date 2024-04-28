@@ -14,11 +14,11 @@ def main():
         print("parts",sep="_")
 
 
-    def finder(s):
-        for char in s:
-            if char.isupper():
-                parts = s.split(char)
-                return parts
-            return [s]
+def finder(s):
+    for char in s:
+        if char.isupper():
+            parts = s.split(char)
+            return parts
+        return [s]
 
 main()
