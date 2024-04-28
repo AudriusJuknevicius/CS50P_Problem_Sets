@@ -10,7 +10,6 @@ def convert(time):
     hours = float(time)
     minutes = float((time - hours) * 60)
 
-def _main_():
 
 
 if __name__ == "__main__":
