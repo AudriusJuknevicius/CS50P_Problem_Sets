@@ -19,6 +19,6 @@ def finder(s):
             parts = s.split(char)
             return parts
         else:
-            break
+            return s
 
 main()
