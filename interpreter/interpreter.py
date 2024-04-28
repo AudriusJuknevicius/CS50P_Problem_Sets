@@ -9,13 +9,13 @@ def main():
     z = float(z)
 
     if y == "+":
-        print(f"{x + z:.2}")
+        print(x + z)
     elif y == "-":
-        print(f"{x - z:.2}")
+        print(x - z)
     elif y == "*":
-        print(f"{x * z:.2}")
+        print(x * z)
     else:
-        print(f"{x / z:.2}")
+        print(x / z)
 
 
 main()
