@@ -5,8 +5,8 @@
 def main():
     x, y, z = input("Expression: ").split(" ")
 
-    x = float
-    z = float
+    float(x)
+    float(z)
 
     if y == "+" :
         print(x+z)
