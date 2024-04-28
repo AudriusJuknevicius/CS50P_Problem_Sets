@@ -5,11 +5,11 @@
 
 def main():
     camelCase = input("camelCase: ")
-    name = finder(camelCase)
+    parts = finder(camelCase)
 
-    if len(name) <2:
-        print("Snake Case:",name[s])
-    elif len(name) >1:
+    if len(parts) <2:
+        print("Snake Case:",parts)
+    elif len(parts) >1:
         print("Snake Case:",name,sep="_")
 
 
