@@ -6,7 +6,8 @@
 def main():
     time_24h = convert(input("What time is it? "))
 
-def convert(time):
+    def convert(time):
+    hours, minutes = time.split(":")
     hours = float(time)
     minutes = float((time - hours) * 60)
 
