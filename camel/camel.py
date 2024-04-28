@@ -4,14 +4,5 @@
 def main():
     camelCase = input("camelCase: ")
 
-    if camelCase == "name":
-        print("name")
-    elif camelCase == "firstName":
-        print("first_name")
-    elif camelCase == "preferredFirstName":
-        print("preferred_first_name")
-main()
-
-
-
-
+    def finder(fdr)
+        
