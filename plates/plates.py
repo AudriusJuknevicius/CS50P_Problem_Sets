@@ -3,7 +3,7 @@
 
 def main():
     plate = input("Plate: ")
-    if is_valid(plate):
+    if is_valid_1(plate):
         print("Valid")
     else:
         print("Invalid")
@@ -11,20 +11,24 @@ def main():
 
 def is_valid_1(s):
     if s < 2 or s > 6:
-        
+        return False
+    else:
+        return True
 
 
-def is_valid_2(s):
 
-def is_valid_3(s):
 
-def is_valid_4(s):
+# def is_valid_2(s):
 
-def is_valid_5(s):
+# def is_valid_3(s):
 
-def is_valid_6(s):
+# def is_valid_4(s):
 
-def is_valid_7(s):
+# def is_valid_5(s):
+
+# def is_valid_6(s):
+
+# def is_valid_7(s):
 
 
 main()
