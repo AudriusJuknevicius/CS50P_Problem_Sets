@@ -8,10 +8,10 @@
 def coke():
     cokebottle = 50
 
-    while cokebottle !=0:
+    while cokebottle > 0:
         inserted = int(input("Insert Coin: "))
         cokebottle = check(inserted, cokebottle)
-        if cokebottle == 0:
+        if cokebottle <= 0:
             print("Change Owed: ",  cokebottle)
         else:
             print("Amount Due: ",  cokebottle)
