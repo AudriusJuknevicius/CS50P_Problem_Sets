@@ -26,7 +26,7 @@ def is_valid_2(s):
             for numberchar in s:
                 if numberchar.isdigit():
                     nsplit += 1
-    if lsplit > 1 and  7 <= lsplit+ nsplit:
+    if lsplit > 1 and  6 <= lsplit + nsplit:
         return s[0:lsplit]
 
 
