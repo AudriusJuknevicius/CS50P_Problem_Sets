@@ -19,8 +19,7 @@ def change(t):
     for character in t:
         if character in vowels:
             t = t.replace(character,"")
-        else:
-            return t
+
 
 
 main()
