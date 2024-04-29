@@ -23,7 +23,7 @@ def is_valid_2(s):
         if letterchar.isalpha():
             lsplit += 1
     numbersplit = s[lsplit:length]
-    if totalsplit.isdigit() and lsplit > 1:
+    if numbersplit.isdigit() and lsplit > 1:
         return True
     else:
         return False
