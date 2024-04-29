@@ -6,7 +6,7 @@
 # Assume that the user will only input integers, and ignore any integer that isn’t an accepted denomination.
 
 def coke():
-    while true:
+    while  :
         inserted = int(input("Insert Coin: ", ))
         inserted = check(inserted)
 
@@ -16,7 +16,8 @@ def check(inserted):
     if inserted = 5, 10, 25:
     cokebottle -= inserted
     if cokebottle == 0:
-        return
-    else true
+        return 0
+    else:
+        return cokebottle
 
 coke()
