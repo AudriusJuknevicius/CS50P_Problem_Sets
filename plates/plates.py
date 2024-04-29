@@ -24,7 +24,9 @@ def is_valid_2(s):
             lsplit += 1
     numbersplit = s[lsplit:length]
     number0check = s[lsplit:lsplit + 1]
-    if numbersplit.isdigit() and lsplit > 1 and number0check != "0":
+    if lsplit == length:
+        return True
+    elif numbersplit.isdigit() and lsplit > 1 and number0check != "0":
         return True
     else:
         return False
