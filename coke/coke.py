@@ -12,6 +12,7 @@ def coke():
         inserted = int(input("Insert Coin: "))
         cokebottle = check(inserted, cokebottle)
         if cokebottle <= 0:
+            cokebottle = abs(cokebottle)
             print("Change Owed: ",  cokebottle)
         else:
             print("Amount Due: ",  cokebottle)
