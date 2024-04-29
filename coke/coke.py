@@ -14,5 +14,5 @@ def coke():
 
 def check(m):
     cokebottle = 50
-    insert =
+    insert = 
 
