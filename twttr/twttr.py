@@ -9,7 +9,7 @@
 def main():
     tweet = input("Input: ")
     tweet = change(tweet)
-    print("Output: " + tweet)
+    # print("Output: " + tweet)
 
 
 
@@ -19,7 +19,7 @@ def change(t):
     for character in t:
         if character in vowels:
             t = t.replace(character,"")
-
+        print(t)
 
 
 main()
