@@ -9,8 +9,21 @@ def main():
         print("Invalid")
 
 
-def is_valid(s):
+def is_valid_1(s):
     
+
+
+def is_valid_2(s):
+
+def is_valid_3(s):
+
+def is_valid_4(s):
+
+def is_valid_5(s):
+
+def is_valid_6(s):
+
+def is_valid_7(s):
 
 
 main()
