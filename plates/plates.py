@@ -3,7 +3,7 @@
 
 def main():
     plate = input("Plate: ")
-    if is_valid_1(plate):
+    if is_valid_2(plate):
         print("Valid")
     else:
         print("Invalid")
@@ -21,19 +21,8 @@ def is_valid_2(s):
     for letchar in s[split]:
         if letchar.isalpha() in s:
             split += 1
-    return s.split
+    return s[0:split]
 
-
-
-
-
-
-    def change(t):
-    vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
-    for character in t:
-        if character in vowels:
-            t = t.replace(character,"")
-    return t
 
 # def is_valid_3(s):
 
