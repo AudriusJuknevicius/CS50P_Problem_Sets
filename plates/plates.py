@@ -17,12 +17,17 @@ def is_valid_1(s):
 
 
 def is_valid_2(s):
-    split = 0
+    lsplit = 0
+    nsplit = 0
     for letterchar in s:
         if letterchar.isalpha():
-            split += 1
-    if split > 1:
-        return s[0:split]
+            lsplit += 1
+        else:
+            
+            nsplit += 1
+
+    if lsplit > 1:
+        return s[0:lsplit]
 
 
 # def is_valid_3(s):
