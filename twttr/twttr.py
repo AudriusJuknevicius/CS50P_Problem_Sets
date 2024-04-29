@@ -7,7 +7,8 @@
 # whether inputted in uppercase or lowercase.
 
 def main():
-    tweet = change(input("Input: "))
+    tweet = input("Input: ")
+    tweet = change(tweet)
     print("Output: " + tweet)
 
 
