@@ -21,6 +21,7 @@ def is_valid_2(s):
     for letchar in s[split]:
         if letchar.isalpha() in s:
             split += 1
+    return s.split
 
 
 
