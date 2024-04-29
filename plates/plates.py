@@ -3,7 +3,7 @@
 
 def main():
     plate = input("Plate: ")
-    if is_valid_2(plate):
+    if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
         print("Valid")
     else:
         print("Invalid")
@@ -31,8 +31,10 @@ def is_valid_2(s):
 
 
 def is_valid_3(s):
-    for notbanned in s:
-        if notbanned.isalpha() 
+    if s.isalnum():
+        return True
+    else:
+        return False
 
 
 
