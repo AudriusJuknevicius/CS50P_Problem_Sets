@@ -18,25 +18,15 @@ def is_valid_1(s):
 
 def is_valid_2(s):
     lsplit = 0
-    nsplit = 0
+    length = len(s)
     for letterchar in s:
         if letterchar.isalpha():
             lsplit += 1
-        else:
-            for numberchar in s:
-                if numberchar.isdigit():
-                 nsplit += 1
-    totalsplit = s[lsplit:lsplit+nsplit]
+    numbersplit = s[lsplit:length]
     if totalsplit.isdigit() and lsplit > 1:
         return True
     else:
         return False
-
-    for letterchar in s:
-        if letterchar.isalpha():
-            lsplit += 1
-        elif letterchar.isdigit():
-            nsplit += 1
 
 
 def is_valid_3(s):
