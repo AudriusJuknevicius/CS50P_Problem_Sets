@@ -18,7 +18,7 @@ def change(t):
     vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
     for character in t:
         if character in vowels:
-            t -= character
+            t = t.replace(vowels,"")
         return t
     else:
         return t
