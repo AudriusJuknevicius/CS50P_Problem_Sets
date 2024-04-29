@@ -10,12 +10,10 @@ def main():
 
 
 def is_valid_1(s):
-    if s < 2 or s > 6:
+    if len(s) < 2 or len(s) > 6:
         return False
     else:
         return True
-
-
 
 
 # def is_valid_2(s):
