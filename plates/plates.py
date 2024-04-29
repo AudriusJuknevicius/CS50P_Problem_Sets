@@ -17,7 +17,7 @@ def is_valid_1(s):
 
 
 def is_valid_2(s):
-    split = 2
+    split = 0
     for letters in s:
         if letters in s:
 
