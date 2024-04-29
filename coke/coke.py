@@ -8,11 +8,15 @@
 def coke():
     while true:
         inserted = int(input("Insert Coin: ", ))
-        if inserted = 5, 10, 25:
-        continue and z = 50
-    else:
+        inserted = check(inserted)
 
-def check(m):
+
+def check(inserted):
     cokebottle = 50
-    insert =
+    if inserted = 5, 10, 25:
+    cokebottle -= inserted
+    if cokebottle == 0:
+        return
+    else true
 
+coke()
