@@ -4,7 +4,7 @@
 def main():
     plate = input("Plate: ")
     if is_valid_2(plate):
-        print("Valid:")
+        print("Valid")
     else:
         print("Invalid")
 
@@ -21,7 +21,8 @@ def is_valid_2(s):
     for letterchar in s:
         if letterchar.isalpha():
             split += 1
-    return s[0:split]
+    if split > 1:
+        return s[0:split]
 
 
 # def is_valid_3(s):
