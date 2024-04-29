@@ -33,7 +33,8 @@ def is_valid_2(s):
         return False
 
 
-# def is_valid_3(s):
+def is_valid_3(s):
+    
 
 # def is_valid_4(s):
 
