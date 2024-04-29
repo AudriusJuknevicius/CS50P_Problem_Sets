@@ -17,9 +17,10 @@ def is_valid_1(s):
 
 
 def is_valid_2(s):
+    split = 2
     for letters in s:
         if letters in s:
-            
+
 
 
 
