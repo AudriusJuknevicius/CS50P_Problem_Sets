@@ -21,6 +21,6 @@ def change(t):
             t = t.replace(character,"")
         else:
             return t
-            
+
 
 main()
