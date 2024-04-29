@@ -18,8 +18,9 @@ def is_valid_1(s):
 
 def is_valid_2(s):
     split = 0
-    for letters in s:
-        if letters in s:
+    for letchar in s[split]:
+        if letchar.isalpha() in s:
+            split += 1
 
 
 
