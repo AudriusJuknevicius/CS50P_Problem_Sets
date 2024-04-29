@@ -12,16 +12,14 @@ def coke():
         inserted = int(input("Insert Coin: "))
         inserted = check(inserted)
         if inserted == 0:
-            print("Change Owed: ",inserted)
-            elif
-            print("Amount Due: "),inserted
+            print("Change Owed: ",  inserted)
+        elif
+            print("Amount Due: "),  inserted
 
 
-
-
-def check(inserted):
+def check(inserted, cokebottle):
     if inserted = 5, 10, 25:
-    cokebottle -= inserted
+        cokebottle -= inserted
     if cokebottle == 0:
         return 0
     else:
