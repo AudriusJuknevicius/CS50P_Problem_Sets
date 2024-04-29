@@ -16,7 +16,8 @@ def main():
 
 def change(t):
     vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
-    for vowels in t:
+    for character in t:
+        t -= character
         return t
 
 main()
