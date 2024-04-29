@@ -10,7 +10,7 @@ def main():
 
 
 def is_valid_1(s):
-    
+    if <2 s >6
 
 
 def is_valid_2(s):
