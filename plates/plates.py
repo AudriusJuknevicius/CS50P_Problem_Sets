@@ -28,6 +28,8 @@ def is_valid_2(s):
                     nsplit += 1
                     if letterchar.isalpha():
                         return False
+
+                    
     if lsplit > 1 and  6 <= lsplit + nsplit:
         return True
 
