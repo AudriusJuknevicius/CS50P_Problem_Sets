@@ -33,10 +33,7 @@ def is_valid_2(s):
 
 
 def is_valid_3(s):
-    if s.isalnum():
-        return True
-    else:
-        return False
+    return s.isalnum()
 
 
 main()
