@@ -26,11 +26,11 @@ def is_valid_2(s):
             for numberchar in s:
                 if numberchar.isdigit():
                  nsplit += 1
-    if s[lsplit:lsplit+nsplit]:
-        totalsplit 
-
-    elif lsplit > 1 and  6 <= lsplit + nsplit:
+    totalsplit = s[lsplit:lsplit+nsplit]
+    if totalsplit.isdigit() and lsplit > 1:
         return True
+    else:
+        return False
 
 
 # def is_valid_3(s):
