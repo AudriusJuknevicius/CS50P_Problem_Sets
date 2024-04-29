@@ -18,7 +18,8 @@ def is_valid_1(s):
 
 def is_valid_2(s):
     for letters in s:
-        if letters in 
+        if letters in s:
+            
 
 
 
