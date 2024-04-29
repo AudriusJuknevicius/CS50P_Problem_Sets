@@ -23,14 +23,15 @@ def is_valid_2(s):
         if letterchar.isalpha():
             lsplit += 1
     numbersplit = s[lsplit:length]
-    if numbersplit.isdigit() and lsplit > 1:
+    number0check = s[lsplit:lsplit + 1]
+    if numbersplit.isdigit() and lsplit > 1 and number0check >0:
         return True
     else:
         return False
 
 
 def is_valid_3(s):
-    
+
 
 # def is_valid_4(s):
 
