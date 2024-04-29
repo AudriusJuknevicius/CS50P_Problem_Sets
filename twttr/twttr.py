@@ -7,4 +7,10 @@
 # whether inputted in uppercase or lowercase.
 
 def main():
-    
+    tweet = insert("Input: ")
+
+
+
+
+def change(t)
+    vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
