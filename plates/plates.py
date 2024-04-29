@@ -25,12 +25,10 @@ def is_valid_2(s):
         else:
             for numberchar in s:
                 if numberchar.isdigit():
-                    nsplit += 1
-                    if letterchar.isalpha():
-                        return False
-
-                    
-    if lsplit > 1 and  6 <= lsplit + nsplit:
+                 nsplit += 1
+    for s[0:lsplit]:
+        
+    elif lsplit > 1 and  6 <= lsplit + nsplit:
         return True
 
 
