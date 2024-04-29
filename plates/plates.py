@@ -32,9 +32,15 @@ def is_valid_2(s):
     else:
         return False
 
+    for letterchar in s:
+        if letterchar.isalpha():
+            lsplit += 1
+        elif letterchar.isdigit():
+            nsplit += 1
+
 
 def is_valid_3(s):
-    
+
 
 # def is_valid_4(s):
 
