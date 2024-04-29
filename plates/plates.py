@@ -10,14 +10,26 @@ def main():
 
 
 def is_valid_1(s):
-    
     if len(s) < 2 or len(s) > 6:
         return False
     else:
         return True
 
 
-# def is_valid_2(s):
+def is_valid_2(s):
+    for letters in s:
+        if letters in 
+
+
+
+
+
+    def change(t):
+    vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
+    for character in t:
+        if character in vowels:
+            t = t.replace(character,"")
+    return t
 
 # def is_valid_3(s):
 
