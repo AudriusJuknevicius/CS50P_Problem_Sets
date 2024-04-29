@@ -7,8 +7,13 @@
 
 def coke():
     while  :
-        inserted = int(input("Insert Coin: ", ))
+        inserted = int(input("Insert Coin: "))
         inserted = check(inserted)
+        if inserted == 0:
+            print("Change Owed: ",inserted)
+            elif
+            print("Amount Due: "),inserted
+
 
 
 def check(inserted):
