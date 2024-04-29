@@ -20,9 +20,6 @@ def coke():
 def check(inserted, cokebottle):
     if inserted == 5 or inserted == 10 or inserted == 25:
         cokebottle -= inserted
-    if cokebottle == 0:
-        return 0
-    else:
-        return cokebottle
+    return cokebottle
 
 coke()
