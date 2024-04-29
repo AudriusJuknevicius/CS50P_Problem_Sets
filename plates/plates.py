@@ -39,14 +39,4 @@ def is_valid_3(s):
         return False
 
 
-
-# def is_valid_4(s):
-
-# def is_valid_5(s):
-
-# def is_valid_6(s):
-
-# def is_valid_7(s):
-
-
 main()
