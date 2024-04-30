@@ -15,9 +15,8 @@ def checkfood(rf):
               "Lemon": 15, "Lime": 20, "Nectarine": 60, "Orange": 80, "Peach": 60, "Pear": 100,
               "Pineapple": 50, "Plums": 70, "Strawberries": 50, "Sweet Cherries": 100,
               "Tangerine": 50, "Watermelon": 80}
-    for fruits in rf:
-        
-        return fruits[" "]
+    if rf == fruits:
+        print(fruits["rf"])
 
 
 food()
