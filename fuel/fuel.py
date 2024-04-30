@@ -21,6 +21,8 @@ def main():
         print("E")
     elif answer == 100:
         print("F")
+    elif answer == False:
+        return False
     else:
         print(answer, "%",sep="")
 
