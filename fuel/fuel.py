@@ -8,8 +8,6 @@ def main():
             x, y = input("Fraction: ").split("/")
             x = int(x)
             y = int(y)
-            if y == 0:
-                return None
         except ValueError:
              print("Unexpected Input")
         else:
