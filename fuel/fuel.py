@@ -12,7 +12,7 @@ def main():
             break
 
     answer = convert(x, y)
-    print(answer, "%")
+    print(answer, "%",sep="")
 
 
         # x = int(x)
