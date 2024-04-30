@@ -6,9 +6,13 @@ def main():
     while True:
         try:
             x, y = input("Fraction: ").split("/")
+            x = int(x)
+            y = int(y)
+            if y == 0:
+                raise ZeroDivisionError("Denominator cannot be zero")
         except ValueError:
              print("Fraction is not an integer")
-        except ZeroDivisionError:
+        except ZeroDivisionError as e:
              print()
              pass
         else:
@@ -27,6 +31,8 @@ def main():
         print(answer, "%",sep="")
 
 def convert(x, y):
+    if y > x:
+        return None
     x = int(x)
     y = int(y)
     if y > x and y == 0:
