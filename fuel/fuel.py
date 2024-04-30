@@ -29,7 +29,7 @@ def main():
 def convert(x, y):
     x = int(x)
     y = int(y)
-    if y > x and y > 0:
+    if y > x and y == 0:
         answer1 = 100 / y
         answer2 = answer1 * x
         if answer2 <= 1:
