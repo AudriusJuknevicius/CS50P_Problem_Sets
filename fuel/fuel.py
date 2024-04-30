@@ -12,30 +12,31 @@ def main():
                 raise ZeroDivisionError("Denominator cannot be zero")
         except ValueError:
              print("Fraction is not an integer")
-        except ZeroDivisionError as e:
-             print()
-             pass
         else:
-            x = int(x)
-            y = int(y)
-            break
+            if x == 100 and y == 100:
+                print("F")
+            else:
+                answer = convert(x, y)
+                if answer is not None:
+                    print("{}%".format(answer))
+                else:
+                    print("Invalid fraction, please try again.")
 
-    answer = convert(x, y)
-    if answer == 1:
-        print("E")
-    elif answer == 100:
-        print("F")
-    elif answer == False:
-        return
-    else:
-        print(answer, "%",sep="")
+
+    # answer = convert(x, y)
+    # if answer == 1:
+    #     print("E")
+    # elif answer == 100:
+    #     print("F")
+    # elif answer == False:
+    #     return
+    # else:
+    #     print(answer, "%",sep="")
 
 def convert(x, y):
     if y > x:
         return None
-    x = int(x)
-    y = int(y)
-    if y > x and y == 0:
+    else:
         answer1 = 100 / y
         answer2 = answer1 * x
         if answer2 <= 1:
@@ -44,8 +45,6 @@ def convert(x, y):
               return 100
         else:
             return round(answer2)
-    else:
-        return False
 
 
 
