@@ -19,6 +19,14 @@ def main():
             # answer = (100 / y) * x
             # print(f"{answer}+"%"")
 
+def convert(x, y):
+    x = int(x)
+    y = int(y)
+    answer1 = 100 / y
+    answer2 = answer1 * x
+    round(answer2)
+
+
 main()
 
 # def main():
