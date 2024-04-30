@@ -9,7 +9,7 @@ def main():
             x = int(x)
             y = int(y)
             if y == 0:
-                raise ZeroDivisionError("Denominator cannot be zero")
+                return None
         except ValueError:
              print("Unexpected Input")
         else:
