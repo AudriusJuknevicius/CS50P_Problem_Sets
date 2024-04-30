@@ -13,9 +13,13 @@ price = {
 }
 
 
-try:
-    item = input("Item: ").lower()
-except EOFError:
-    
+    try:
+         item = input("Item: ").lower().title()
+    except EOFError:
+         print("Wrong Input")
+    else:
+     item += 
+     print()
+
 
 
