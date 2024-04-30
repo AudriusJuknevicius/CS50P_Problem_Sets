@@ -19,7 +19,7 @@ def checkfood(rf):
     if rf in fruits:
             return fruits[rf]
     else:
-         None
+         return 0
 
 
 food()
