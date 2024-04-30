@@ -18,6 +18,8 @@ def checkfood(rf):
               "Tangerine": 50, "Watermelon": 80}
     if rf in fruits:
             return fruits[rf]
+    else:
+         None
 
 
 food()
