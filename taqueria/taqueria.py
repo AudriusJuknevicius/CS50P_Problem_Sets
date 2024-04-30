@@ -15,7 +15,7 @@ def main():
     while True:
         try:
          item = input("Item: ").lower().title()
-         sum = item
+         sum = price[item] += sum
          print("${}".format(price[item]))
         except EOFError:
             print("Wrong Input")
