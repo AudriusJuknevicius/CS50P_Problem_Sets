@@ -20,6 +20,8 @@ def main():
          print("${}".format(total_cost))
         except EOFError:
             print("Wrong Input")
+            print()
+            break
         except KeyError:
            pass
 
