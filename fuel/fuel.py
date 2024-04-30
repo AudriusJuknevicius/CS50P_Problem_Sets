@@ -16,7 +16,7 @@ def main():
             y = int(y)
             break
 
-    answer = convert(x, y) and check(x, y)
+    answer = convert(x, y)
     if answer == 1:
         print("E")
     elif answer == 100:
@@ -27,6 +27,7 @@ def main():
 def convert(x, y):
     x = int(x)
     y = int(y)
+    if y > x and y > 0:
     answer1 = 100 / y
     answer2 = answer1 * x
     if answer2 <= 1:
@@ -36,9 +37,6 @@ def convert(x, y):
     else:
         return round(answer2)
 
-def check(x, y):
-    if y > x and y > 0:
-        return True
 
 
 main()
