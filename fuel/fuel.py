@@ -8,12 +8,13 @@ def main():
             x, y = input("Fraction: ").split("/")
         except ValueError:
              print("Fraction is not an integer")
+        except ZeroDivisionError:
              pass
         elif:
         check(x, y)
         else:
             break
-    
+
     answer = convert(x, y)
     if answer == 1:
         print("E")
