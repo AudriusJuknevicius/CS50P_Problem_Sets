@@ -14,7 +14,8 @@ price = {
 
 
 try:
-    item = input("Item: ").lower().istitled()
+    item = input("Item: ").lower()
 except EOFError:
+    
 
 
