@@ -22,4 +22,5 @@ def fuel():
     while True:
          try:
               return int(input("Fraction: ")).split("/")
+         except ValueError:
 
