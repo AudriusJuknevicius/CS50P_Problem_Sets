@@ -27,7 +27,7 @@ def convert(x, y):
     y = int(y)
     answer1 = 100 / y
     answer2 = answer1 * x
-    return answer2.round()
+    return round(answer2)
 
 
 main()
