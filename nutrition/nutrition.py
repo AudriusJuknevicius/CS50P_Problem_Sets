@@ -16,7 +16,7 @@ def checkfood(rf):
               "Pineapple": 50, "Plums": 70, "Strawberries": 50, "Sweet Cherries": 100,
               "Tangerine": 50, "Watermelon": 80}
     for calories in fruits:
-            print(fruits[calories])
+            return fruits[calories]
 
 
 food()
