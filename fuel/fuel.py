@@ -9,8 +9,13 @@ def main():
         except ValueError:
              print("Fraction is not an integer")
         else:
-            return
-        print(f"{x + y}")
+            break
+        x = int(x)
+        y = int(y)
+        answer = 100 / y
+        answer2 = answer * x
+        print()
+    # print(f"{answer*x}")
             # answer = (100 / y) * x
             # print(f"{answer}+"%"")
 
