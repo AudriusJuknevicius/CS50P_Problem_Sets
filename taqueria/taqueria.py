@@ -1,6 +1,6 @@
 
-def main()
-price = {
+def main():
+    price = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -18,8 +18,7 @@ price = {
     except EOFError:
          print("Wrong Input")
     else:
-     item += 
-     print()
+     print(item[price])
 
 
-
+main()
