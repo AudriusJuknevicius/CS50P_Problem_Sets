@@ -24,7 +24,7 @@ def main():
                 print("F")
                 break
             else:
-                if answer is not None:
+                if answer != None:
                     print("{}%".format(answer))
                     break
                 else:
