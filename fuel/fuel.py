@@ -5,8 +5,8 @@ try:
 except ValueError:
     print("Fraction is not an integer")
 else:
-    answer = 100 / y * x
-    print(answer)
+    answer = (100 / y) * x
+    print(answer+"%")
 
 
 
