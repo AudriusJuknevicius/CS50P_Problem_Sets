@@ -31,5 +31,9 @@ def convert(x, y):
     else:
         return round(answer2)
 
+def rules(x, y):
+    if y > x and y > 0:
+        return
+
 
 main()
