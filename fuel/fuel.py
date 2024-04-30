@@ -3,13 +3,14 @@
 
 
 def main():
-    try:
-        x, y = input("Fraction: ")).split("/")
-    except ValueError:
+    while True:
+        try:
+            x, y = input("Fraction: ")).split("/")
+        except ValueError:
              print("Fraction is not an integer")
-    else:
-          answer = (100 / y) * x
-          print(answer+"%")
+        else:
+            answer = (100 / y) * x
+            print(answer+"%")
 
 main()
 
