@@ -32,7 +32,7 @@ def main():
 
 
 def convert(x, y):
-    if y > x:
+    if x > y:
         return None
     else:
         answer1 = 100 / y
