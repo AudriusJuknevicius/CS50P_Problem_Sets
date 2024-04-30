@@ -15,6 +15,10 @@ def main():
         else:
             if x == 100 and y == 100:
                 print("F")
+            elif answer == 1:
+                print("E")
+            elif answer == 100:
+                print("F")
             else:
                 answer = convert(x, y)
                 if answer is not None:
@@ -24,10 +28,10 @@ def main():
 
 
     # answer = convert(x, y)
-    # if answer == 1:
-    #     print("E")
-    # elif answer == 100:
-    #     print("F")
+    if answer == 1:
+        print("E")
+    elif answer == 100:
+        print("F")
     # elif answer == False:
     #     return
     # else:
