@@ -17,7 +17,7 @@ def main():
         try:
          item = input("Item: ").lower().title()
          total_cost += price[item]
-         print("${}".format(total_cost))
+         print("${:.2f}".format(total_cost))
         except EOFError:
             print("Wrong Input")
             print()
