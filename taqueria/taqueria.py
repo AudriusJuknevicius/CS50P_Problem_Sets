@@ -1,6 +1,6 @@
 
-
-{
+def main()
+price = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -11,3 +11,10 @@
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+
+
+try:
+    item = input("Item: ").lower().istitled()
+except EOFError:
+
+
