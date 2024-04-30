@@ -13,6 +13,7 @@ def main():
         except ValueError:
              print("Fraction is not an integer")
         else:
+            answer = convert(x, y)
             if x == 100 and y == 100:
                 print("F")
             elif answer == 1:
@@ -20,7 +21,6 @@ def main():
             elif answer == 100:
                 print("F")
             else:
-                answer = convert(x, y)
                 if answer is not None:
                     print("{}%".format(answer))
                 else:
