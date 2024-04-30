@@ -1,7 +1,7 @@
 # https://cs50.harvard.edu/python/2022/psets/2/nutrition/
 
 def food():
-    rawfruit = input("Item: ")
+    rawfruit = input("Item: ").islower().title()
     caloriesoutput = checkfood(rawfruit)
     print("Calories:", caloriesoutput)
 
