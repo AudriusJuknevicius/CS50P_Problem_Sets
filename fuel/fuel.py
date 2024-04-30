@@ -10,9 +10,13 @@ def main():
              print("Fraction is not an integer")
         else:
             break
-
     answer = convert(x, y)
-    print(answer, "%",sep="")
+    if answer == 1:
+        print("E")
+    elif answer == 100:
+        print("F")
+    else:
+        print(answer, "%",sep="")
 
 
         # x = int(x)
@@ -28,8 +32,12 @@ def convert(x, y):
     y = int(y)
     answer1 = 100 / y
     answer2 = answer1 * x
-    if 
-    return round(answer2)
+    if answer2 <= 1:
+        return 1
+    elif answer2 >= 99:
+        return 100
+    else:
+        return round(answer2)
 
 
 main()
