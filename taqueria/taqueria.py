@@ -15,9 +15,13 @@ def main():
     while True:
         try:
          item = input("Item: ").lower().title()
+         sum = item
          print("${}".format(price[item]))
         except EOFError:
             print("Wrong Input")
+        except KeyError:
+           pass
+
 
 
 main()
