@@ -10,12 +10,10 @@ def main():
              print("Fraction is not an integer")
         except ZeroDivisionError:
              pass
-        elif:
-        check(x, y)
         else:
             break
 
-    answer = convert(x, y)
+    answer = convert(x, y) and check(x, y)
     if answer == 1:
         print("E")
     elif answer == 100:
