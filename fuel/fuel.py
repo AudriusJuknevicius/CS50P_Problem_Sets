@@ -34,6 +34,7 @@ def main():
 def convert(x, y):
     if x > y:
         return None
+    elif 
     else:
         answer1 = 100 / y
         answer2 = answer1 * x
