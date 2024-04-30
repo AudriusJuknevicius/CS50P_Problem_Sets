@@ -11,12 +11,13 @@ def main():
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+    total_cost = 0
 
     while True:
         try:
          item = input("Item: ").lower().title()
-         sum = price[item] += sum
-         print("${}".format(price[item]))
+         total_cost += price[item]
+         print("${}".format(total_cost))
         except EOFError:
             print("Wrong Input")
         except KeyError:
