@@ -9,6 +9,7 @@ def main():
         except ValueError:
              print("Fraction is not an integer")
         except ZeroDivisionError:
+             print()
              pass
         else:
             x = int(x)
