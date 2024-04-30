@@ -2,7 +2,7 @@
 
 
 
-def main()
+def main():
     try:
         x, y = int(input("Fraction: ")).split("/")
     except ValueError:
@@ -13,3 +13,12 @@ def main()
 
 
 
+def main():
+    a = fuel()
+    print(a+"%")
+
+
+def fuel():
+    while True:
+         try:
+              
