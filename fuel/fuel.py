@@ -5,7 +5,7 @@
 def main():
     while True:
         try:
-            x, y = input("Fraction: ")).split("/")
+            x, y = input("Fraction: ").split("/")
         except ValueError:
              print("Fraction is not an integer")
         else:
