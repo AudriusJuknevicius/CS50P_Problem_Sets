@@ -18,15 +18,6 @@ def main():
     else:
         print(answer, "%",sep="")
 
-
-        # x = int(x)
-        # y = int(y)
-        # answer = 100 / y
-        # answer2 = answer * x
-    # print(f"{answer*x}")
-            # answer = (100 / y) * x
-            # print(f"{answer}+"%"")
-
 def convert(x, y):
     x = int(x)
     y = int(y)
@@ -41,15 +32,3 @@ def convert(x, y):
 
 
 main()
-
-# def main():
-#     a = fuel()
-#     print(a+"%")
-
-
-# def fuel():
-#     while True:
-#          try:
-#               return int(input("Fraction: ")).split("/")
-#          except ValueError:
-
