@@ -2,4 +2,8 @@
 
 try:
     x = 1
-    
+    y = int(input("Fraction: "))
+except ValueError:
+    print("Fraction is not an integer")
+else:
+    print(x/y)
