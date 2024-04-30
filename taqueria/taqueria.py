@@ -18,7 +18,7 @@ def main():
     except EOFError:
          print("Wrong Input")
     else:
-     print(item[price])
+     print("${}".format(price[item]))
 
 
 main()
