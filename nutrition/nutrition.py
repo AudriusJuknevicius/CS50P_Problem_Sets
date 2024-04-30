@@ -10,10 +10,10 @@ def food():
 
 
 def checkfood(rf)
-    fruits = ["Apple", "Avocado", "Banana", "Cantaloupe",
-              "Grapefruit", "Grapes", "Honeydrew Melon", "Kiwifruit",
-              "Lemon", "Lime", "Nectarine", "Orange", "Peach", "Pear",
-              "Pineapple", "Plums", "Strawberries", "Sweet Cherries",
-              "Tangerine", "Watermelon"]
-    calories = ["130", "50", "110", "50", "60", "90", "50", "90", "15", "20",]
+    fruits = ["Apple": 130, "Avocado": 50, "Banana": 110, "Cantaloupe": 50,
+              "Grapefruit": 60, "Grapes": 90, "Honeydrew Melon": 50, "Kiwifruit": 90,
+              "Lemon": 15, "Lime": 20, "Nectarine": 60, "Orange": 80, "Peach": 60, "Pear": 100,
+              "Pineapple": 50, "Plums": 70, "Strawberries": 50, "Sweet Cherries": 100,
+              "Tangerine": 50, "Watermelon": 80]
+
 
