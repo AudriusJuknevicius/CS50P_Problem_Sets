@@ -23,15 +23,16 @@ def main():
             else:
                 if answer is not None:
                     print("{}%".format(answer))
+                    break
                 else:
                     print("Invalid fraction, please try again.")
 
 
     # answer = convert(x, y)
-    if answer == 1:
-        print("E")
-    elif answer == 100:
-        print("F")
+    # if answer == 1:
+    #     print("E")
+    # elif answer == 100:
+    #     print("F")
     # elif answer == False:
     #     return
     # else:
