@@ -12,13 +12,12 @@ def main():
     "Tortilla Salad": 8.00
 }
 
-
-    try:
+    while True:
+        try:
          item = input("Item: ").lower().title()
-    except EOFError:
-         print("Wrong Input")
-    else:
-     print("${}".format(price[item]))
+         print("${}".format(price[item]))
+        except EOFError:
+            print("Wrong Input")
 
 
 main()
