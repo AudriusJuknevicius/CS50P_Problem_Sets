@@ -11,6 +11,8 @@ def main():
         except ZeroDivisionError:
              pass
         else:
+            x = int(x)
+            y = int(y)
             break
 
     answer = convert(x, y) and check(x, y)
@@ -35,7 +37,7 @@ def convert(x, y):
 
 def check(x, y):
     if y > x and y > 0:
-        return
+        return True
 
 
 main()
