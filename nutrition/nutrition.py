@@ -3,8 +3,9 @@
 def food():
     rawfruit = input("Item: ").lower().title()
     caloriesoutput = checkfood(rawfruit)
-    if caloriesoutput.isdigit():
-        return print("Calories:", caloriesoutput)
+    checkifnull = caloriesoutput
+    if checkifnull.isdigit():
+        print("Calories:", caloriesoutput)
 
 
 
