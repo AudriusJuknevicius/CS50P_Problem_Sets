@@ -10,11 +10,14 @@ def main():
              print("Fraction is not an integer")
         else:
             break
-        x = int(x)
-        y = int(y)
-        answer = 100 / y
-        answer2 = answer * x
-        print(str(answer2) + "%")
+        answer = convert(x, y)
+        print(answer)
+
+
+        # x = int(x)
+        # y = int(y)
+        # answer = 100 / y
+        # answer2 = answer * x
     # print(f"{answer*x}")
             # answer = (100 / y) * x
             # print(f"{answer}+"%"")
@@ -24,7 +27,7 @@ def convert(x, y):
     y = int(y)
     answer1 = 100 / y
     answer2 = answer1 * x
-    round(answer2)
+    return answer2.round()
 
 
 main()
