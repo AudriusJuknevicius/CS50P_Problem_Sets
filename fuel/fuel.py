@@ -10,8 +10,9 @@ def main():
              print("Fraction is not an integer")
         else:
             break
-        answer = convert(x, y)
-        print(answer)
+
+    answer = convert(x, y)
+    print(answer, "%")
 
 
         # x = int(x)
