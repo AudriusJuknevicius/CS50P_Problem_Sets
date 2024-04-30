@@ -4,23 +4,23 @@
 
 def main():
     try:
-        x, y = int(input("Fraction: ")).split("/")
+        x, y = input("Fraction: ")).split("/")
     except ValueError:
              print("Fraction is not an integer")
     else:
           answer = (100 / y) * x
           print(answer+"%")
 
+main()
+
+# def main():
+#     a = fuel()
+#     print(a+"%")
 
 
-def main():
-    a = fuel()
-    print(a+"%")
-
-
-def fuel():
-    while True:
-         try:
-              return int(input("Fraction: ")).split("/")
-         except ValueError:
+# def fuel():
+#     while True:
+#          try:
+#               return int(input("Fraction: ")).split("/")
+#          except ValueError:
 
