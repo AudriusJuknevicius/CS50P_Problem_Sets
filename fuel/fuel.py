@@ -28,7 +28,9 @@ def convert(x, y):
     x = int(x)
     y = int(y)
     if y > x and y > 0:
-    answer1 = 100 / y
+        answer1 = 100 / y
+    else:
+        return False
     answer2 = answer1 * x
     if answer2 <= 1:
         return 1
