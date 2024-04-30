@@ -8,6 +8,7 @@ def main():
             x, y = input("Fraction: ").split("/")
         except ValueError:
              print("Fraction is not an integer")
+             pass
         else:
             break
     answer = convert(x, y)
