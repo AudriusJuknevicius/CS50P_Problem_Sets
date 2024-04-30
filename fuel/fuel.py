@@ -9,8 +9,11 @@ def main():
         except ValueError:
              print("Fraction is not an integer")
              pass
+        elif:
+        check(x, y)
         else:
             break
+    
     answer = convert(x, y)
     if answer == 1:
         print("E")
@@ -31,7 +34,7 @@ def convert(x, y):
     else:
         return round(answer2)
 
-def rules(x, y):
+def check(x, y):
     if y > x and y > 0:
         return
 
