@@ -16,6 +16,7 @@ def main():
                 break
 
     for item, count in item_dic.items():
+        sorted(item_dic)
         print("{} {}".format(count, item))
 
 
