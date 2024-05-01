@@ -15,7 +15,10 @@ def main():
              except EOFError:
                 break
 
-    for item, count in item_dic.items():
+
+    sorted_items = sorted(item_dic.items())
+
+    for item, count in sorted_items:
         print("{} {}".format(count, item))
 
 
