@@ -1,8 +1,8 @@
+def main()
 
 
 
-
-[
+fmonths = [
     "January",
     "February",
     "March",
@@ -16,3 +16,4 @@
     "November",
     "December"
 ]
+            
