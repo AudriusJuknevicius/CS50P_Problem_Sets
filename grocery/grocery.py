@@ -1,11 +1,11 @@
 def main():
 
-item_dic = {}
+    item_dic = {}
 
 
-    while True:
-        try:
-            item = input()
-            
+         while True:
+             try:
+                 item = input()
+
 
 
