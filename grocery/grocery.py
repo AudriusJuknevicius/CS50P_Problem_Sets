@@ -9,7 +9,7 @@ def main():
                 if item in item_dic:
                     item = item [+1]
              except EOFError:
-                    print(item_dic)
+                    print("{item_dic}: {}".format(item_dic[item]))
                     break
              else:
                     pass
