@@ -13,9 +13,11 @@ def main():
              except KeyError:
                     pass
              except EOFError:
-                sorted(item_dic)
-                print(item_dic[item])
                 break
+
+    for item, count in item_dic.items():
+        print("{} {}".format(count, item))
+
 
 main()
 
