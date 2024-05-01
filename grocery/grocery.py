@@ -14,11 +14,8 @@ def main():
                     pass
              except EOFError:
                 sorted(item_dic)
-                print("{item_dic}: {}".format(item_dic[item]))
-             except KeyError:
-                  break
-             else:
-                  pass
+                print(item_dic[item])
+                break
 
 main()
 
