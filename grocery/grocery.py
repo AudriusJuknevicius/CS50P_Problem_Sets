@@ -8,12 +8,15 @@ def main():
                 item_dic = {item: 0}
                 if item in item_dic:
                     item = item [+1]
-             except EOFError:
-                    print("{item_dic}: {}".format(item_dic[item]))
-                    break
-             else:
+             except KeyError:
                     pass
-
+             except EOFError:
+                sorted(item_dic)
+                print("{item_dic}: {}".format(item_dic[item]))
+             except KeyError:
+                  break
+             else:
+                  pass
 
 main()
 
