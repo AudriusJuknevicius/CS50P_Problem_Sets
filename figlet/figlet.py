@@ -12,7 +12,6 @@ if len(sys.argv) == 1:
     user_input = input("Input: ")
     figlet.setFont(font=random.choice(figlet.getFonts()))
     font_changed = figlet.renderText(user_input)
-
     print("Output: " + font_changed)
 
 elif len(sys.argv) == 3:
@@ -22,6 +21,8 @@ elif len(sys.argv) == 3:
         final_font = figlet.renderText(userinput2)
 
         print("Output: " + final_font)
+    else:
+         sys.exit
 else:
         sys.exit("Too many or few arguments entered.")
 
