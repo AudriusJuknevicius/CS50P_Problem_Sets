@@ -6,7 +6,7 @@ from pyfiglet import Figlet
 
 figlet = Figlet()
 
-figlet.setFont(font=f)
+# figlet.setFont(font=f)
 
 if len(sys.argv) == 0:
     user_input = input("Input: ")
