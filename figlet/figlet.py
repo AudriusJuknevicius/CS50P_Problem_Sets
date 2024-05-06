@@ -12,14 +12,20 @@ if len(sys.argv) == 1:
     user_input = input("Input: ")
     figlet.setFont(font=random.choice(figlet.getFonts()))
     font_changed = figlet.renderText(user_input)
+
     print("Output: " + font_changed)
 
 elif len(sys.argv == 2):
     if sys.argv[1] == "-f" or sys.argv[1] == "--font":
-        changed_font = figlet.setFont(font=sys.argv[2])
+        figlet.setFont(font=sys.argv[2])
+        userinput2 = input("Input: ")
+        final_font = figlet.renderText(userinput2)
+
+        print("Output: " + final_font)
+    else:
+        sys.exit
 
 
-    user_input = input("Input: ")
 
 
 
