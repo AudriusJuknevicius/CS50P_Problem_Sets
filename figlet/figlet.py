@@ -2,7 +2,10 @@
 
 import random
 import sys
-import figlet
+
+from pyfiglet import figlet
+
+figlet = figlet()
 
 if len(sys.argv) == 0:
     sys.argv = fig_randomize(sys.argv)
