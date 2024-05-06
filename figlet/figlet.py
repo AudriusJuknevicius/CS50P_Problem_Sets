@@ -2,7 +2,9 @@
 
 import random
 import sys
-import figlet
+from pyfiglet import Figlet
+
+figlet = Figlet()
 
 
 #Check if any command-line arguments were provided.
