@@ -5,7 +5,6 @@
 import random
 
 while True:
-        try:
             chosenlevel = int(input("Level: "))
             if chosenlevel > 0:
                 userlevel = chosenlevel * 10
@@ -20,7 +19,7 @@ while True:
                      elif guess == answer:
                         print("Just right!")
                         break
-        
+
 
 
 
