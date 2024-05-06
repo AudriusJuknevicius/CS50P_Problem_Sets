@@ -11,8 +11,12 @@ while True:
             namelist.append(userinput)
         except EOFError:
             if len(namelist) == 1:
-                # names = p.join((namelist[0]))
-                print("Adieu, adieu, to", namelist[1])
+                print("Adieu, adieu, to", namelist[0])
+
+            elif len(namelist) ==2:
+                names = p.join((namelist[0] and namelist[1]))
+                print("Adieu, adieu, to", names)
+
             break
 
 
