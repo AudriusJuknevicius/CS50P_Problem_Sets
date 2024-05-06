@@ -5,16 +5,18 @@ import sys
 import figlet
 
 if len(sys.argv) == 0:
-    ?????????????
-
-elif len(sys.argv) == 2:
-    ??????????????
+    sys.argv = fig_randomize(sys.argv)
+    print(figlet.rendertext(sys.argv))
 
 
+# elif len(sys.argv) == 2:
+#     ??????????????
 
-def fig_randomize(input):
-    random.choice(figlet.getfonts())
-    return input
+
+
+def fig_randomize(sys.argv):
+    sys.argv = random.choice(figlet.getfonts(sys.argv))
+    return sys.argv
 
 
 
@@ -22,17 +24,17 @@ def fig_randomize(input):
 
 
 # Checks that the provided command-line argument has first -f or --font or --font as the second. Otherwise exits.
-if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] != "--font":
-    sys.exit
+# if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] != "--font":
+#     sys.exit
 
 
-figlet = figlet(sys.argv)
+# figlet = figlet(sys.argv)
 
 
-if len(sys.argv) == 0:
-    figlet.setFont(font=f)
-    sys.argv = random.choice(figlet.getFonts())
-    print(figlet.renderText(sys.argv))
+# if len(sys.argv) == 0:
+#     figlet.setFont(font=f)
+#     sys.argv = random.choice(figlet.getFonts())
+#     print(figlet.renderText(sys.argv))
 
 
 # if len(sys.argv) == 0:
