@@ -15,9 +15,8 @@ if len(sys.argv) == 1:
     print("Output: " + font_changed)
 
 elif len(sys.argv == 2):
-    
-    if sys.argv[1] == "-f":
-        figlet.setFont(font=sys.argv[1])
+    if sys.argv[1] == "-f" or sys.argv[1] == "--font":
+        changed_font = figlet.setFont(font=sys.argv[2])
 
 
     user_input = input("Input: ")
