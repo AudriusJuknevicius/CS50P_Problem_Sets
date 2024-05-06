@@ -4,6 +4,6 @@ namelist = []
 
 while True:
     userinput = input("Name: ")
-    namelist[userinput]
+    namelist["userinput"]
     print(namelist)
     break
