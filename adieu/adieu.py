@@ -4,4 +4,5 @@ namelist = []
 
 while True:
     userinput = input("Name: ")
-    namelist []
+    namelist[userinput]
+    
