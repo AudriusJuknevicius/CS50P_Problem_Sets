@@ -26,3 +26,5 @@ if len(sys.argv) == 0:
 
 user_input = input("Input: ")
 
+def random_figlet():
+
