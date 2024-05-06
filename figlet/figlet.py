@@ -22,9 +22,8 @@ elif len(sys.argv) == 3:
 
         print("Output: " + final_font)
     else:
-         sys.exit
-else:
-        sys.exit("Too many or few arguments entered.")
+        sys.exit("Too many or few arguments.")
+
 
 
 
