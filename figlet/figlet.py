@@ -18,13 +18,13 @@ if len(sys.argv) == 0:
     print(figlet.renderText(sys.argv))
 
 
-if len(sys.argv) == 0:
-    print(input("Input: ")
+# if len(sys.argv) == 0:
+#     print(input("Input: ")
 
 
 
 
-user_input = input("Input: ")
+# user_input = input("Input: ")
 
-def random_figlet():
+# def random_figlet():
 
