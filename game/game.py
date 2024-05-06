@@ -8,19 +8,24 @@ while True:
             chosenlevel = int(input("Level: "))
             if chosenlevel > 0:
                 answer = random.randint(1, chosenlevel)
-                guess = int(input("Guess: "))
+                while True:
+                    guess = int(input("Guess: "))
 
-                if guess > 0:
-                     if guess > answer:
-                        print("Too large!")
+                    if guess > 0:
+                        if guess > answer:
+                            print("Too large!")
 
-                     elif guess < answer:
-                        print("Too small!")
+                        elif guess < answer:
+                            print("Too small!")
 
-                     elif guess == answer:
-                        print("Just right!")
-                        break
+                        elif guess == answer:
+                            print("Just right!")
+                            break
+                    else:
+                        print("Invalid Guess")
 
+            else:
+                 print("Invalid Level")
 
 
 
