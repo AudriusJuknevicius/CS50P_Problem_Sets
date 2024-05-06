@@ -7,8 +7,7 @@ import random
 while True:
             chosenlevel = int(input("Level: "))
             if chosenlevel > 0:
-                userlevel = chosenlevel * 10
-                answer = random.randint(1, userlevel)
+                answer = random.randint(1, chosenlevel)
                 guess = int(input("Guess: "))
 
                 if guess > 0:
