@@ -22,8 +22,9 @@ elif len(sys.argv) == 3:
         final_font = figlet.renderText(userinput2)
 
         print("Output: " + final_font)
-    else:
+else:
         sys.exit("Too many or few arguments entered.")
+
 
 
 
