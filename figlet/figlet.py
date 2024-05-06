@@ -5,8 +5,12 @@ import sys
 import figlet
 
 
+
+figlet = figlet(sys.argv)
+
+
 if len(sys.argv) == 0:
-    sys.argv = 
+    sys.argv = random.choice(figlet.getFonts())
 
 
 # Checks that the provided command-line argument has first -f or --font or --font as the second. Otherwise exits.
