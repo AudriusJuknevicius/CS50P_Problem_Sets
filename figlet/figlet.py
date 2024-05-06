@@ -5,9 +5,10 @@ import Figlet
 import sys
 
 
-if 
+if sys.argv[1] != "-f" or sys.argv[2] != "--font"
 
 if len(user_input) == 0:
+
 
 
 user_input = input("Input: ")
