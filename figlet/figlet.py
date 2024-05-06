@@ -4,13 +4,10 @@ import random
 import sys
 import figlet
 
-
-# figlet.setFont(font=f)
-
 if len(sys.argv) == 0:
     user_input = input("Input: ")
     fronted_input = random.choice(figlet.getfonts(user_input))
-    print(figlet.rendertext(fronted_input))
+    print("Output: " +figlet.rendertext(fronted_input))
 
 
 
