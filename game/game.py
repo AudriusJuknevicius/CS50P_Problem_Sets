@@ -8,7 +8,7 @@ while True:
             chosenlevel = int(input("Level: "))
             if chosenlevel > 0:
                 userlevel = chosenlevel * 10
-                answer = random.choice(userlevel)
+                answer = random.randint(1, userlevel)
                 guess = int(input("Guess: "))
 
                 if guess > 0:
