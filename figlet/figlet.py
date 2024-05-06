@@ -5,12 +5,19 @@ import sys
 import figlet
 
 
+
+def fig_randomize():
+    random.choioce(figlet.getfonts()
+
+
+
+
+
+
 # Checks that the provided command-line argument has first -f or --font or --font as the second. Otherwise exits.
 if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] != "--font":
     sys.exit
 
-
-    
 
 figlet = figlet(sys.argv)
 
