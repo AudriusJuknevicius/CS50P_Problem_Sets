@@ -11,8 +11,18 @@ while True:
                 userlevel = chosenlevel * 10
                 answer = random.choice(userlevel)
                 guess = int(input("Guess: "))
+
                 if guess > 0:
-                    
+                     if guess > answer:
+                        print("Too large!")
+                     elif guess < answer:
+                        print("Too small!")
+                     elif guess == answer:
+                        print("Just right!")
+                        break
+        
+
+
 
 
 
