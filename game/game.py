@@ -21,6 +21,7 @@ while True:
                         elif guess == answer:
                             print("Just right!")
                             break
+                        
                     else:
                         print("Invalid Guess")
 
