@@ -4,7 +4,7 @@ import emoji
 
 def main():
     emoji_input = input("Input: ")
-    emoji = emoji.emojize(emoji_input)
-    print("Output: " + emoji)
+    emoji_output = emoji.emojize(emoji_input)
+    print("Output: " + emoji_output)
 
 main()
