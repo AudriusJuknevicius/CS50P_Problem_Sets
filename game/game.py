@@ -7,6 +7,9 @@ import random
 while True:
         try:
             chosenlevel = int(input("Level: "))
-            userlevel = chosenlevel * 10
-            
+            if chosenlevel > 0:
+                userlevel = chosenlevel * 10
+                answer = random.choice(userlevel)
+
+
 
