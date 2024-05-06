@@ -16,6 +16,7 @@ while True:
             elif len(namelist) ==2:
                 names = p.join((namelist[0], namelist[1]))
                 print("Adieu, adieu, to", names)
+                elif
 
             break
 
