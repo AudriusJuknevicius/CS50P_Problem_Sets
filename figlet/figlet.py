@@ -14,7 +14,6 @@ if len(sys.argv) == 1:
     font_changed = figlet.renderText(user_input)
 
     print("Output: " + font_changed)
-    sys.exit
 
 elif len(sys.argv) == 3:
     if sys.argv[1] == "-f" or sys.argv[1] == "--font":
@@ -24,7 +23,7 @@ elif len(sys.argv) == 3:
 
         print("Output: " + final_font)
     else:
-        sys.exit
+        sys.exit("Too many or few arguments entered.")
 
 
 
