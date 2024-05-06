@@ -10,8 +10,8 @@ figlet = Figlet()
 
 if len(sys.argv) == 1:
     user_input = input("Input: ")
-    random.choice(figlet.getfonts())
-    figlet.setfont(font=f)
+    random.choice(figlet.getFonts())
+    figlet.setFont(font=f)
     font_changed = figlet.rendertext(user_input)
     print("Output: " + font_changed)
 
