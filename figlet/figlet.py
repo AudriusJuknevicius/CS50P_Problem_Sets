@@ -14,6 +14,11 @@ if len(sys.argv) == 1:
     font_changed = figlet.renderText(user_input)
     print("Output: " + font_changed)
 
+elif len(sys.argv == 2):
+    
+    user_input = input("Input: ")
+
+
 
 
 
