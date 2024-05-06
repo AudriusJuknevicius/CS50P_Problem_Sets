@@ -8,14 +8,12 @@ figlet = figlet()
 figlet.setFont(font=f)
 
 if len(sys.argv) == 0:
-    sys.argv = fig_randomize(sys.argv)
-    print(figlet.rendertext(sys.argv))
+    user_input = input("Input: ")
+    fronted_input = random.choice(figlet.getfonts(user_input))
+    print(figlet.rendertext(fronted_input))
 
 
 
-def fig_randomize(sys.argv):
-    sys.argv = random.choice(figlet.getfonts(sys.argv))
-    return sys.argv
 
 # elif len(sys.argv) == 2:
 #     ??????????????
