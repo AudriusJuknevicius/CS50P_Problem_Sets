@@ -4,10 +4,13 @@ import random
 import sys
 import figlet
 
+if len(sys.argv)
 
 
-def fig_randomize():
-    random.choioce(figlet.getfonts()
+
+def fig_randomize(input):
+    random.choice(figlet.getfonts())
+    return input
 
 
 
