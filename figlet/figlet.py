@@ -2,9 +2,10 @@
 
 import random
 import sys
-import figlet
+from pyfiglet import Figlet
 
-figlet = figlet()
+figlet = Figlet()
+
 figlet.setFont(font=f)
 
 if len(sys.argv) == 0:
