@@ -6,7 +6,6 @@ from pyfiglet import Figlet
 
 figlet = Figlet()
 
-
 #Check if any command-line arguments were provided.
 
 if len(sys.argv) == 1:
