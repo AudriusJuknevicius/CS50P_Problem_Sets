@@ -10,9 +10,9 @@ if len(sys.argv) == 1:
     user_input = input("Input: ")
     # Get a random font and render the input text using figlet.
     font_input = random.choice(figlet.getfonts(user_input))
-    
+    font_changed = figlet.rendertext(user_input, font_input)
 
-    print("Output: " +figlet.rendertext(fronted_input))
+    print("Output: " + font_changed)
 
 
 
