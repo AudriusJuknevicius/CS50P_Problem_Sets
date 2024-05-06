@@ -10,6 +10,8 @@ while True:
                 answer = random.randint(1, chosenlevel)
                 guess = int(input("Guess: "))
 
+            while True:
+
                 if guess > 0:
                      if guess > answer:
                         print("Too large!")
