@@ -4,9 +4,14 @@ import random
 import sys
 import figlet
 
+#Check if any command-line arguments were provided.
 if len(sys.argv) == 1:
+    # if no command-line arguments, ask for input.
     user_input = input("Input: ")
-    fronted_input = random.choice(figlet.getfonts(user_input))
+    # Get a random font and render the input text using figlet.
+    font_input = random.choice(figlet.getfonts(user_input))
+    
+
     print("Output: " +figlet.rendertext(fronted_input))
 
 
