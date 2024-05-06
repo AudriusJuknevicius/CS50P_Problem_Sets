@@ -10,6 +10,8 @@ while True:
             if chosenlevel > 0:
                 userlevel = chosenlevel * 10
                 answer = random.choice(userlevel)
+                guess = int(input("Guess: "))
+                
 
 
 
