@@ -9,7 +9,7 @@ if len(sys.argv) == 1:
     # if no command-line arguments, ask for input.
     user_input = input("Input: ")
     # Get a random font and render the input text using figlet.
-    font_input = random.choice(figlet.getfonts(user_input))
+    font_input = random.choice(figlet.getfonts())
     font_changed = figlet.rendertext(user_input, font_input)
 
     print("Output: " + font_changed)
