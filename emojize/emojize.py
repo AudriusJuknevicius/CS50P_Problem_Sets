@@ -2,9 +2,7 @@
 
 import emoji
 
-def main():
-    emoji_input = input("Input: ")
-    emoji_output = emoji.emojize(emoji_input)
-    print("Output: " + emoji_output)
+emoji_input = input("Input: ")
+emoji_output = emoji.emojize(emoji_input)
+print("Output: " + emoji_output)
 
-main()
