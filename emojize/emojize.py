@@ -1,6 +1,10 @@
 #https://cs50.harvard.edu/python/2022/psets/4/emojize/
 
 import emoji
+
 def main():
     emoji_input = input("Input: ")
-    emoji
+    emoji = emoji.emojize(emoji_input)
+    print("Output: " + emoji)
+
+main()
