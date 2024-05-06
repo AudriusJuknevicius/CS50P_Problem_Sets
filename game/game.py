@@ -27,7 +27,7 @@ while True:
                         print("Invalid Guess")
 
                 break
-            
+
             else:
                  print("Invalid Level")
 
