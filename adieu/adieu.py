@@ -3,7 +3,10 @@
 namelist = []
 
 while True:
-    userinput = input("Name: ")
-    namelist["userinput"]
-    print(namelist)
-    break
+        try:
+            userinput = input("Name: ")
+            namelist.append(userinput)
+        except EOFError:
+            print("Adieu, adieu, to" + namelist)
+            break
+
