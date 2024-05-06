@@ -9,6 +9,9 @@ import figlet
 if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] != "--font":
     sys.exit
 
+
+    
+
 figlet = figlet(sys.argv)
 
 
