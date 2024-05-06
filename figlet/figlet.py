@@ -2,9 +2,8 @@
 
 import random
 import sys
-from pyfiglet import Figlet
+import figlet
 
-figlet = Figlet()
 
 # figlet.setFont(font=f)
 
