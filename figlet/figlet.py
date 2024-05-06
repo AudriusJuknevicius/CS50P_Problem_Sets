@@ -20,7 +20,6 @@ elif len(sys.argv) == 3:
         figlet.setFont(font=sys.argv[2])
         userinput2 = input("Input: ")
         final_font = figlet.renderText(userinput2)
-
         print("Output: " + final_font)
     else:
         sys.exit("Too many or few arguments.")
