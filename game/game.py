@@ -5,31 +5,34 @@
 import random
 
 while True:
-            chosenlevel = int(input("Level: "))
-            if chosenlevel > 0:
-                answer = random.randint(1, chosenlevel)
+            try:
+                chosenlevel = int(input("Level: "))
+                if chosenlevel > 0:
+                    answer = random.randint(1, chosenlevel)
 
-                while True:
-                    guess = int(input("Guess: "))
+                    while True:
+                        guess = int(input("Guess: "))
 
-                    if guess > 0:
-                        if guess > answer:
-                            print("Too large!")
+                        if guess > 0:
+                            if guess > answer:
+                                print("Too large!")
 
-                        elif guess < answer:
-                            print("Too small!")
+                            elif guess < answer:
+                                print("Too small!")
 
-                        elif guess == answer:
-                            print("Just right!")
-                            break
+                            elif guess == answer:
+                                print("Just right!")
+                                break
 
-                    else:
-                        print("Invalid Guess")
+                        else:
+                            print("Invalid Guess")
 
-                break
+                    break
 
-            else:
-                 print("Invalid Level")
+                else:
+                    print("Invalid Level")
+            except ValueError:
+                 pass
 
 
 
