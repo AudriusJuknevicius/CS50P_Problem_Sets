@@ -2,4 +2,6 @@
 
 import random
 
+
+
 user_input = input("Input: ")
