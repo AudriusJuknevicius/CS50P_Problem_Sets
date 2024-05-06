@@ -2,3 +2,10 @@
 
 
 
+import random
+
+while True:
+        try:
+            chosenlevel = int(input("Level: "))
+            userlevel = chosenlevel*10
+
