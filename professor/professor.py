@@ -22,14 +22,17 @@ def generate_integer(level):
     if level == 1:
         A = random.randint(1, 9)
         B = random.randint(1, 9)
+        return A, B
     elif level ==2:
         A = random.randint(10, 99)
         B = random.randint(10, 99)
+        return A, B
     elif level ==3:
         A = random.randint(100, 999)
         B = random.randint(100, 999)
+        return A, B
     else:
-        
+        return False
 
 
 
