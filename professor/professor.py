@@ -28,6 +28,8 @@ def generate_integer(level):
     elif level ==3:
         A = random.randint(100, 999)
         B = random.randint(100, 999)
+    else:
+        
 
 
 
