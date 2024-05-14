@@ -11,9 +11,8 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            if level =! 1 or level =! 2 or level =! 3:
+            
                 return level
-            raise ValueError("Wrong Value")
 
 
 
@@ -32,7 +31,7 @@ def generate_integer(level):
         B = random.randint(100, 999)
         return A, B
     else:
-        return False
+        raise ValueError("Wrong Value")
 
 
 
