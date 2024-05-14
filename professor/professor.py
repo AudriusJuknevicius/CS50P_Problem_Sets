@@ -4,7 +4,12 @@ import random
 
 
 def main():
-    ...
+    T = 10
+    while T > 10:
+        
+
+    T += 1
+
 
 
 def get_level():
