@@ -1,9 +1,10 @@
 # https://cs50.harvard.edu/python/2022/psets/4/professor/
 
+
 import random
 
 
-def main():
+# def main():
     # T = 10
     # while T > 10:
 
@@ -40,7 +41,7 @@ def generate_integer(level):
         return A, B
     return False
 
-
+get_level()
 
 if __name__ == "__main__":
     main()
