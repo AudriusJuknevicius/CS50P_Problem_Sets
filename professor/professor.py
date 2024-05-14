@@ -20,6 +20,7 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
+        A = randint(range 10)
 
 
 
