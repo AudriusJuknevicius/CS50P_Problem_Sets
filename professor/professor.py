@@ -13,6 +13,8 @@ def get_level():
             level = int(input("Level: "))
             X, Y = generate_integer(level)
             print(X + Y)
+
+        except ValueError: ("Wrong Value")
         pass
 
 
@@ -31,8 +33,7 @@ def generate_integer(level):
         A = random.randint(100, 999)
         B = random.randint(100, 999)
         return A, B
-
-    except ValueError: ("Wrong Value")
+    return False
 
 
 
