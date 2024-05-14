@@ -20,14 +20,14 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        A = randint(1, 9)
-        B = randint(1, 9)
+        A = random.randint(1, 9)
+        B = random.randint(1, 9)
     elif level ==2:
-        A = randint(10, 99)
-        B = randint(10, 99)
+        A = random.randint(10, 99)
+        B = random.randint(10, 99)
     elif level ==3:
-        A = randint(100, 999)
-        B = randint(100, 999)
+        A = random.randint(100, 999)
+        B = random.randint(100, 999)
 
 
 
