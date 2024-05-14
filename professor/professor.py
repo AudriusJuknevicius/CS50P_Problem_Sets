@@ -4,11 +4,11 @@ import random
 
 
 def main():
-    T = 10
-    while T > 10:
-        
+    # T = 10
+    # while T > 10:
 
-    T += 1
+
+    # T += 1
 
 
 
@@ -27,16 +27,16 @@ def get_level():
 
 def generate_integer(level):
     if level == 1:
-        A = random.randint(1, 9)
-        B = random.randint(1, 9)
+        A = 1
+        B = 9
         return A, B
     elif level == 2:
-        A = random.randint(10, 99)
-        B = random.randint(10, 99)
+        A = 10
+        B = 99
         return A, B
     elif level == 3:
-        A = random.randint(100, 999)
-        B = random.randint(100, 999)
+        A = 100
+        B = 999
         return A, B
     return False
 
@@ -44,3 +44,9 @@ def generate_integer(level):
 
 if __name__ == "__main__":
     main()
+
+
+
+    # A = random.randint(100, 999)
+    #     B = random.randint(100, 999)
+    #     return A, B
