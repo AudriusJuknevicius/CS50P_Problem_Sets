@@ -19,7 +19,7 @@ def get_level():
             level = int(input("Level: "))
             X, Y = generate_integer(level)
             print(X + Y)
-
+            break
         except ValueError: ("Wrong Value")
         pass
 
@@ -43,8 +43,8 @@ def generate_integer(level):
 
 get_level()
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
 
