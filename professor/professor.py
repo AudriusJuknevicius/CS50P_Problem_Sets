@@ -22,6 +22,9 @@ def get_level():
         except ValueError: ("Wrong Value")
         pass
 
+except ValueError: ("Wrong Value")
+        pass
+
 
 
 
