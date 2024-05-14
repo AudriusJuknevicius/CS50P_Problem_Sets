@@ -11,8 +11,10 @@ def get_level():
     while True:
         try:
             level = int(input("Level: "))
-            
-                return level
+            X, Y = generate_integer(level)
+            print(X + Y)
+        else:
+            pass
 
 
 
@@ -22,22 +24,16 @@ def generate_integer(level):
         A = random.randint(1, 9)
         B = random.randint(1, 9)
         return A, B
-    elif level ==2:
+    elif level == 2:
         A = random.randint(10, 99)
         B = random.randint(10, 99)
         return A, B
-    elif level ==3:
+    elif level == 3:
         A = random.randint(100, 999)
         B = random.randint(100, 999)
         return A, B
     else:
         raise ValueError("Wrong Value")
-
-
-
-    level 1 = 1-9
-    level 2 = 10-99
-    level 3 = 100-999
 
 
 
