@@ -18,8 +18,7 @@ def get_level():
         try:
             level = int(input("Level: "))
             X, Y = generate_integer(level)
-            print(X + Y)
-            break
+            return X, Y
         except ValueError: ("Wrong Value")
         pass
 
