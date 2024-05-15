@@ -6,7 +6,8 @@ import sys
 try:
     len(sys.argv) < 2:
     sys.exit("Missing command-line argument")
-    
+
+bitcoin = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
 except requests.RequestException:
     ...
