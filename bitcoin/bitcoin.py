@@ -6,10 +6,10 @@ import sys
 try:
     if len(sys.argv) < 2:
         sys.exit("Missing command-line argument")
-except requests.RequestException:
-    sys.exit("Missing command-line argument")
 except ValueError:
-    sys.exit("Command-line argument is not a number")
+        sys.exit("Command-line argument is not a number")
+except requests.RequestException:
+        sys.exit
 
 valuetimes = float(sys.argv[1])
 
