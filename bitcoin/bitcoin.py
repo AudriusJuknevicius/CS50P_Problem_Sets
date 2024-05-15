@@ -5,6 +5,8 @@ import sys
 
 try:
     len(sys.argv) < 2:
+    sys.exit("Missing command-line argument")
     
+
 except requests.RequestException:
     ...
