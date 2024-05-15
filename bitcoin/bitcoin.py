@@ -9,12 +9,14 @@ try:
 except requests.RequestException:
     sys.exit
 
+valuetimes = float(sys.argv[1])
+
 bitcoin_json = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 bitcoin_api = bitcoin_json.json()
 
 usdrate = bitcoin_api["bpi"]["USD"]["rate"]
 
-bitcoinvalue = usdrate * sys.argv[2]
+bitcoinvalue = usdrate * valuetimes
 
 print(f"${bitcoinvalue:,.4f}")
 
