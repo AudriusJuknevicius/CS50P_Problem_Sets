@@ -4,6 +4,7 @@ import requests
 import sys
 
 try:
+    len(sys.argv) < 2:
     
 except requests.RequestException:
     ...
