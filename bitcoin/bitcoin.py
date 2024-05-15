@@ -15,7 +15,9 @@ bitcoin_json = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
 bitcoin_api = bitcoin_json.json()
 
-for bitcoin in bitcoin_api
+for bitcoin in bitcoin_api["USD"]
+bitcoinvalue = bitcoin * sys.argv[1]
+    print(f"${bitcoin:,.4f}")
 
 
 except requests.RequestException:
