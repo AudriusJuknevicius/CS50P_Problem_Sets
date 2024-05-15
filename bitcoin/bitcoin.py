@@ -6,7 +6,7 @@ import sys
 try:
     if len(sys.argv) < 2:
         sys.exit("Missing command-line argument")
-except ValueError:
+    except ValueError:
         sys.exit("Command-line argument is not a number")
 except requests.RequestException:
         sys.exit
