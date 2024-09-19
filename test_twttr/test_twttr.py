@@ -8,6 +8,8 @@ def test_twittr():
         assert shorten("Education") == "dctn"
     except AssertionError:
         print("The result did not ommit all vowels")
+    try:
+        assert
 
 def test_twittr():
 
