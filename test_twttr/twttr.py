@@ -7,11 +7,8 @@ def main():
 
 
 def shorten(word):
-    vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
-    for character in word:
-        if character in vowels:
-            word = word.replace(character,"")
-    return word
+    vowels = "AaEeIiOoUu"
+    return ''.join([char for char in word if char not in vowels])
 
 
 if __name__ == "__main__":
