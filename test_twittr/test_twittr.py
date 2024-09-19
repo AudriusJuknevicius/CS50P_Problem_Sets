@@ -5,4 +5,5 @@ def main(:)
 
 
 def test_twittr()
-    if 
+    assert shorten("A") == ""
+    assert shorten("a") == ""
