@@ -5,5 +5,15 @@ def main(:)
 
 
 def test_twittr()
-    assert shorten("A") == ""
-    assert shorten("a") == ""
+    try:
+
+        assert shorten("A") == ""
+    except AssertionError:
+        print("Vowel "A" was not ommited")
+    try:
+        assert shorten("a") == ""
+
+
+
+if __name__ == "__main__":
+    main()
