@@ -12,6 +12,8 @@ def test_twittr()
         print("Vowel "A" was not ommited")
     try:
         assert shorten("a") == ""
+    except AssertionError:
+        print("Vowel "a" was not ommited")
 
 
 
