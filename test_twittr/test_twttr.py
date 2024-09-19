@@ -7,18 +7,9 @@ def main():
 def test_twittr():
 
     try:
-        assert shorten("A") == ""
+        assert shorten("Education") == "dctn"
     except AssertionError:
-        print("Vowel A was not ommited")
-
-    try:
-        assert shorten("a") == ""
-    except AssertionError:
-        print("Vowel a was not ommited")
-
-    
-
-
+        print("The result did not ommit all vowels")
 
 
 
