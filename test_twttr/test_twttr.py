@@ -14,22 +14,22 @@ def test_twittr():
     except AssertionError:
         print("Failed to remove uppercase vowels")
 
-            try:
+    try:
         assert shorten("hello") == "hll"
     except AssertionError:
         print("Failed to remove lowercase vowels")
 
-            try:
+    try:
         assert shorten("H3ll0 W0rld!") == "H3ll0 W0rld!"
     except AssertionError:
         print("Failed with numbers and punctuation")
 
-            try:
+    try:
         assert shorten("rhythm") == "rhythm"
     except AssertionError:
         print("Failed with string containing no vowels")
 
-            try:
+    try:
         assert shorten("") == ""
     except AssertionError:
         print("Failed with an empty string")
