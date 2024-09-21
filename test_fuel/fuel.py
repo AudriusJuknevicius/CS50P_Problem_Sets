@@ -27,7 +27,8 @@ def main():
 
 
 def gauge(percentage):
-    
+    percentage = convert(percentage)
+    answer =
 
 
 
