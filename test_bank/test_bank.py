@@ -3,7 +3,7 @@
 from bank import value
 import pytest
 
-def test_twittr():
+def test_bank():
     assert shorten("Education") == "dctn"
     assert shorten("HELLO") == "HLL"
     assert shorten("hello") == "hll"
