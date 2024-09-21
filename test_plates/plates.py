@@ -1,14 +1,14 @@
 def main():
-    is_valid
+    plate = input("Plate: ")
+    plate = is_valid(plate)
+    print(plate)
 
 
 def is_valid(plate):
-
-    plate = input("Plate: ")
     if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
-        print("Valid")
+        return ("Valid")
     else:
-        print("Invalid")
+        return("Invalid")
 
 
 def is_valid_1(s):
