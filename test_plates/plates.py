@@ -6,14 +6,14 @@ def main():
         print("Invalid")
 
 def is_valid(plate):
-    if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
+    if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate) and is_valid_4(plate):
         return True
     else:
         return False
 
 
 def is_valid_1(s):
-    if len(s) < 2 or len(s) > 6 or not s[:2].isalpha():
+    if s[:2].isalpha():
         return False
     return True
 
@@ -37,6 +37,10 @@ def is_valid_2(s):
 def is_valid_3(s):
     return s.isalnum()
 
+def is_valid_4(s):
+    if len(s) < 2 or len(s) > 6:
+        return False
+    return True
 
 
 if __name__ == "__main__":
