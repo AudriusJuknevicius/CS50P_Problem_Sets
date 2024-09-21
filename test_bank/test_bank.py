@@ -1,7 +1,8 @@
 # https://cs50.harvard.edu/python/2022/psets/5/test_bank/
 
-from bank import value
 import pytest
+from bank import value
+
 
 def test_bank():
     assert value("hello") == "$0"
