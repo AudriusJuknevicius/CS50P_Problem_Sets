@@ -1,10 +1,11 @@
 
 def main():
-    try
-        fraction = input("Fraction: ")
+    fraction = input("Fraction: ")
+    try:
         percentage = convert(fraction)
         print(gauge(percentage))
-    except (ValueError, ZeroDivisionError) as 
+    except (ValueError, ZeroDivisionError) as e:
+        print(e)
 
 
 def gauge(percentage):
