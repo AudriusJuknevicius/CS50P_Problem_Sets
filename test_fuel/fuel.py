@@ -1,6 +1,6 @@
 
 def main():
-    gauge
+    fraction = input("Fraction: ")
 
 def gauge(percentage):
     percentage = convert(percentage)
