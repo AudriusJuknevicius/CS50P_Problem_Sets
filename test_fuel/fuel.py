@@ -4,9 +4,9 @@ def main():
 
 def gauge(percentage):
     percentage = convert(percentage)
-    if percentage == 100:
+    if percentage >= 100:
         print("F")
-    elif percentage == 1:
+    elif percentage <= 1:
         print("E")
     elif percentage == 100:
         print("F")
