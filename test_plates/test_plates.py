@@ -9,4 +9,11 @@ def test_plates():
     assert is_valid("H") == False
     assert is_valid("") == False
     assert is_valid("CS") == True
+    assert is_valid("CS50!") == False
+    assert is_valid("CS 50") == False
+    assert is_valid("A123BC") == False
+    assert is_valid("A123BC") == True
+
+
+
 
