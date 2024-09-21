@@ -1,9 +1,10 @@
 def main():
 
 
-def gauge():
+def gauge(percentage):
     while True:
         try:
+            percentage = x, y
             x, y = input("Fraction: ").split("/")
             x = int(x)
             y = int(y)
