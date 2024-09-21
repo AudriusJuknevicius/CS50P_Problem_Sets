@@ -6,16 +6,12 @@ def main():
         print("Invalid")
 
 def is_valid(plate):
-    if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate) and is_valid_4(plate):
-        return True
-    else:
-        return False
+    return is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate) and is_valid_4(plate)
 
 
 def is_valid_1(s):
-    if s[:2].isalpha():
-        return False
-    return True
+    return s[:2].isalpha()
+
 
 
 def is_valid_2(s):
