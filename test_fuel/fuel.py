@@ -26,6 +26,16 @@ def main():
                     print("Invalid fraction, please try again.")
 
 
+def gauge(percentage):
+    
+
+
+
+
+
+
+
+
 def convert(fraction):
     x, y = fraction.split("/")
     x = int(x)
@@ -38,11 +48,3 @@ def convert(fraction):
         answer1 = 100 / y
         answer2 = answer1 * x
     return round(answer2)
-
-
-def gauge(percentage):
-    if percentage =< 1 then
-
-
-if __name__ == "__main__":
-    main()
