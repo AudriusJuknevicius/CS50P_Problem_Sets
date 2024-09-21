@@ -8,4 +8,5 @@ def test_plates():
     assert is_valid("P13.14") == False
     assert is_valid("H") == False
     assert is_valid("") == False
+    assert is_valid("CS") == True
 
