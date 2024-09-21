@@ -1,15 +1,12 @@
+
 def main():
-
-
-def gauge(percentage):
     while True:
         try:
-            percentage = x, y
             x, y = input("Fraction: ").split("/")
             x = int(x)
             y = int(y)
         except ValueError:
-             print("Unexpected Input")
+                print("Unexpected Input")
         else:
             answer = convert(x, y)
             if x == 100 and y == 100:
