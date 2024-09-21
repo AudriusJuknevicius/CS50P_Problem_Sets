@@ -1,3 +1,5 @@
+# https://cs50.harvard.edu/python/2022/psets/5/test_fuel/
+
 import pytest
 from fuel import gauge, convert
 
@@ -17,7 +19,7 @@ def test_convert():
 
 def test_convert_invalid():
     with pytest.raises(ValueError):
-        convert("6/5")  # Expecting ValueError for numerator greater than denominator
+        convert("6/5")  
 
     with pytest.raises(ZeroDivisionError):
-        convert("1/0")  # Expecting ZeroDivisionError for division by zero
+        convert("1/0")
