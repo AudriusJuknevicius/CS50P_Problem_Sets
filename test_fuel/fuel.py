@@ -28,7 +28,7 @@ def main():
 
 def gauge(percentage):
     percentage = convert(percentage)
-    answer =
+    if percentage == 100 and 
 
 
 
