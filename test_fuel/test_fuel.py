@@ -7,9 +7,8 @@ def gauge():
     assert gauge("50") == "50%"
 
 def convert():
-    assert convert("CS50") ==
-    assert convert("CS05") ==
-    assert convert("CS50P") == 
+    assert convert("CS50") == ValueError
+    assert convert("0") == ZeroDivisionError
 
 
 
