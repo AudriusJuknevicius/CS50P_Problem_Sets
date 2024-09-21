@@ -1,17 +1,19 @@
 
 def main():
     fraction = input("Fraction: ")
+    print(gauge)
+
 
 def gauge(percentage):
     percentage = convert(percentage)
     if percentage >= 100:
-        print("F")
+        return("F")
     elif percentage <= 1:
-        print("E")
+        return("E")
     elif percentage == 100:
-        print("F")
+        return("F")
     else:
-        print("{}%".format(percentage))
+        return("{}%".format(percentage))
 
 
 def convert(fraction):
