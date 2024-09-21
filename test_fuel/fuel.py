@@ -29,7 +29,8 @@ def gauge(percentage):
                     print("Invalid fraction, please try again.")
 
 
-def convert(x, y):
+def convert(fraction):
+    x, y = fraction.split("/")
     if x > y:
         return None
     elif y == 0:
