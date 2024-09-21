@@ -41,7 +41,7 @@ def convert(fraction):
 
 
 def gauge(percentage):
-    
+    if percentage =< 1 then
 
 
 if __name__ == "__main__":
