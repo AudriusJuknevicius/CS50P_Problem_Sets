@@ -40,6 +40,9 @@ def convert(fraction):
     return round(answer2)
 
 
+def gauge(percentage):
+    
+
 
 if __name__ == "__main__":
     main()
