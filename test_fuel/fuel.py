@@ -26,8 +26,8 @@ def convert(fraction):
         raise ZeroDivisionError
     else:
         answer1 = 100 / y
-        answer2 = answer1 * x
-    return round(answer2)
+        percentage = answer1 * x
+    return round(percentage)
 
 
 
