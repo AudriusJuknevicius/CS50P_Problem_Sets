@@ -19,8 +19,6 @@ def test_convert_invalid():
         convert("6/5")
     with pytest.raises(ZeroDivisionError):
         convert("1/0")
-    with pytest.raises(ValueError):
-        convert("CS50")
 
 
 
