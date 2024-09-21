@@ -6,9 +6,9 @@ def main():
 
 def is_valid(plate):
     if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
-        return ("Valid")
+        return True
     else:
-        return("Invalid")
+        return False
 
 
 def is_valid_1(s):
