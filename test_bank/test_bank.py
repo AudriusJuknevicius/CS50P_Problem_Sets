@@ -4,9 +4,9 @@ from bank import value
 import pytest
 
 def test_bank():
-    assert shorten("Education") == "dctn"
-    assert shorten("HELLO") == "HLL"
-    assert shorten("hello") == "hll"
-    assert shorten("H3ll0 W0rld!") == "H3ll0 W0rld!"
-    assert shorten("rhythm") == "rhythm"
-    assert shorten("") == ""
+    assert value("hello") == "$0"
+    assert value("HELLO") == "$0"
+    assert value("hey") == "$20"
+    assert value("H3ll0 W0rld!") == "$20"
+    assert value("Yo") == "$100"
+    assert value("") == "$100"
