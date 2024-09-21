@@ -15,11 +15,8 @@ def test_convert():
     assert convert("3/4") == 75
 
 def test_convert_invalid():
-    with pytest.raises(ValueError):
-        convert("6/5")
-    with pytest.raises(ZeroDivisionError):
-        convert("1/0")
-
+    assert convert("6/5") = ValueError
+    assert convert("1/0") = ZeroDivisionError
 
 
 
