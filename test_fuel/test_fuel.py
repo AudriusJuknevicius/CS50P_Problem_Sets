@@ -2,13 +2,25 @@ import pytest
 from fuel import gauge, convert
 
 def test_gauge():
-    assert gauge("0/1") == "E"
-    assert gauge("99") == "F"
-    assert gauge("5/10") == "50%"
+    assert gauge(99) == "F"
+    assert gauge(0) == "E"
+    assert gauge(50) == "50%"
+    assert gauge(1) == "E"
+    assert gauge(100) == "F"
+
 
 def test_convert():
-    assert convert("CS50") == ValueError
-    assert convert("0") == ZeroDivisionError
+    assert convert("5/10") == 50
+    assert convert("1/2") == 50
+    assert convert("3/4") == 75
+
+def test_convert_invalid():
+    with pytest.raises(ValueError):
+        convert("6/5")
+    with pytest.raises(ZeroDivisionError):
+        convert("1/0")
+    with pytest.raises(ValueError):
+        convert("CS50")
 
 
 
