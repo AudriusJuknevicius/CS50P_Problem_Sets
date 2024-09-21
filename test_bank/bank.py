@@ -1,6 +1,7 @@
 def main():
     hello = input("Greeting: ").lower().strip()
     hello = value(hello)
+    hello = str(hello)
     print("$" + hello)
 
 
