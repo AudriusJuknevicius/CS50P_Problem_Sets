@@ -31,6 +31,8 @@ def gauge(percentage):
 
 def convert(fraction):
     x, y = fraction.split("/")
+    x = int(x)
+    y = int(y)
     if x > y:
         return None
     elif y == 0:
