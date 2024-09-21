@@ -6,15 +6,12 @@ def main():
 
 
 def gauge(percentage):
-    percentage = convert(percentage)
     if percentage >= 100:
         return("F")
     elif percentage <= 1:
         return("E")
-    elif percentage == 100:
-        return("F")
     else:
-        return("{}%".format(percentage))
+        return f"{percentage}%"
 
 
 def convert(fraction):
@@ -26,8 +23,7 @@ def convert(fraction):
     elif y == 0:
         raise ZeroDivisionError
     else:
-        answer1 = 100 / y
-        percentage = answer1 * x
+        percentage = (x / y) * 100
     return round(percentage)
 
 
