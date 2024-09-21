@@ -34,9 +34,9 @@ def convert(fraction):
     x = int(x)
     y = int(y)
     if x > y:
-        return None
+        raise ValueError
     elif y == 0:
-        return None
+        raise ZeroDivisionError
     else:
         answer1 = 100 / y
         answer2 = answer1 * x
