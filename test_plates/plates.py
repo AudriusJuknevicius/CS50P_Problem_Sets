@@ -6,9 +6,9 @@ def is_valid(plate):
 
     plate = input("Plate: ")
     if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
-     print("Valid")
+        print("Valid")
     else:
-    print("Invalid")
+        print("Invalid")
 
 
 def is_valid_1(s):
