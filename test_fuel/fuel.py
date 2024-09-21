@@ -1,8 +1,10 @@
 
 def main():
-    fraction = input("Fraction: ")
-    percentage = convert(fraction)
-    print(gauge(percentage))
+    try
+        fraction = input("Fraction: ")
+        percentage = convert(fraction)
+        print(gauge(percentage))
+    except (ValueError, ZeroDivisionError) as 
 
 
 def gauge(percentage):
@@ -19,9 +21,9 @@ def convert(fraction):
     x = int(x)
     y = int(y)
     if x > y:
-        raise ValueError
+        raise ValueError("X was higher than Y")
     elif y == 0:
-        raise ZeroDivisionError
+        raise ZeroDivisionError("Y cannot be zero")
     else:
         percentage = (x / y) * 100
     return round(percentage)
