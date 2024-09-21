@@ -13,7 +13,6 @@ def is_valid_1(s):
     return s[:2].isalpha()
 
 
-
 def is_valid_2(s):
     lsplit = 0
     length = len(s)
