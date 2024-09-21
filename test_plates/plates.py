@@ -6,6 +6,7 @@ def main():
         print("Invalid")
 
 def is_valid(plate):
+    if plate[:2].isalpha():
     if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
         return True
     else:
@@ -13,13 +14,10 @@ def is_valid(plate):
 
 
 def is_valid_1(s):
-    if s[:2].isalpha():
-        if len(s) < 2 or len(s) > 6:
-            return False
-        else:
-            return True
-    else:
+    if len(s) < 2 or len(s) > 6:
         return False
+    else:
+        return True
 
 
 
