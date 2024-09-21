@@ -40,12 +40,7 @@ def convert(fraction):
     else:
         answer1 = 100 / y
         answer2 = answer1 * x
-        if answer2 <= 1:
-            return 1
-        elif answer2 >= 99:
-              return 100
-        else:
-            return round(answer2)
+    return round(answer2)
 
 
 
