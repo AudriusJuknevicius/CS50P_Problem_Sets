@@ -1,8 +1,9 @@
 def main():
     plate = input("Plate: ")
-    plate = is_valid(plate)
-    print(plate)
-
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
 def is_valid(plate):
     if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
