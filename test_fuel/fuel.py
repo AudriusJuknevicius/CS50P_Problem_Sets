@@ -1,8 +1,7 @@
-# https://cs50.harvard.edu/python/2022/psets/3/fuel/
-
-
-
 def main():
+
+
+def gauge():
     while True:
         try:
             x, y = input("Fraction: ").split("/")
@@ -46,4 +45,5 @@ def convert(x, y):
 
 
 
-main()
+if __name__ == "__main__":
+    main()
