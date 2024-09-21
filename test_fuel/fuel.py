@@ -6,7 +6,7 @@ def main():
 
 
 def gauge(percentage):
-    if percentage >= 100:
+    if percentage >= 99:
         return("F")
     elif percentage <= 1:
         return("E")
