@@ -5,9 +5,9 @@ from bank import value
 
 
 def test_bank():
-    assert value("hello") == "0"
-    assert value("HELLO") == "0"
-    assert value("hey") == "20"
-    assert value("H3ll0 W0rld!") == "20"
-    assert value("Yo") == "100"
-    assert value("") == "100"
+    assert value("hello") == 0
+    assert value("HELLO") == 0
+    assert value("hey") == 20
+    assert value("H3ll0 W0rld!") == 20
+    assert value("Yo") == 100
+    assert value("") == 100
