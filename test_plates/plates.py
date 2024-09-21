@@ -13,11 +13,9 @@ def is_valid(plate):
 
 
 def is_valid_1(s):
-    if len(s) < 2 or len(s) > 6:
+    if len(s) < 2 or len(s) > 6 or not s[:2].isalpha():
         return False
-    else:
-        return True
-
+    return True
 
 
 def is_valid_2(s):
