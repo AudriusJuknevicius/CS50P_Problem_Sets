@@ -14,9 +14,14 @@ def test_convert():
     assert convert("1/2") == 50
     assert convert("3/4") == 75
 
+# def test_convert_invalid():
+#     assert convert("6/5") = ValueError
+#     assert convert("1/0") = ZeroDivisionError
+
+
 def test_convert_invalid():
-    assert convert("6/5") = ValueError
-    assert convert("1/0") = ZeroDivisionError
+    with pytest.raises(ValueError):
+        convert("6/5")  # Expecting ValueError for numerator greater than denominator
 
-
-
+    with pytest.raises(ZeroDivisionError):
+        convert("1/0")  # Expecting ZeroDivisionError for division by zero
