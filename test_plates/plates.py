@@ -1,12 +1,14 @@
-# https://cs50.harvard.edu/python/2022/psets/2/plates/
-
-
 def main():
+    is_valid
+
+
+def is_valid(plate):
+
     plate = input("Plate: ")
     if is_valid_1(plate) and is_valid_2(plate) and is_valid_3(plate):
-        print("Valid")
+     print("Valid")
     else:
-        print("Invalid")
+    print("Invalid")
 
 
 def is_valid_1(s):
@@ -35,17 +37,6 @@ def is_valid_2(s):
 def is_valid_3(s):
     return s.isalnum()
 
-
-main()
-
-
-
-def main():
-
-
-
-def is_valid(s):
-    
 
 
 if __name__ == "__main__":
