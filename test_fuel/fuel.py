@@ -1,40 +1,17 @@
 
 def main():
-    while True:
-        try:
-            x, y = input("Fraction: ").split("/")
-            x = int(x)
-            y = int(y)
-        except ValueError:
-                print("Unexpected Input")
-        else:
-            answer = convert(x, y)
-            if x == 100 and y == 100:
-                print("F")
-                break
-            elif answer == 1:
-                print("E")
-                break
-            elif answer == 100:
-                print("F")
-                break
-            else:
-                if answer != None:
-                    print("{}%".format(answer))
-                    break
-                else:
-                    print("Invalid fraction, please try again.")
-
+    gauge
 
 def gauge(percentage):
     percentage = convert(percentage)
-    if percentage == 100 and 
-
-
-
-
-
-
+    if percentage == 100:
+        print("F")
+    elif percentage == 1:
+        print("E")
+    elif percentage == 100:
+        print("F")
+    else:
+        print("{}%".format(percentage))
 
 
 def convert(fraction):
@@ -49,3 +26,8 @@ def convert(fraction):
         answer1 = 100 / y
         answer2 = answer1 * x
     return round(answer2)
+
+
+
+if __name__ == "__main__":
+    main()
