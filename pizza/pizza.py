@@ -12,4 +12,4 @@ if not filename.endswith(".csv"): # Checks if the file ends with ".py".
 
 with open(filename) as pizzycsv:
     pretty = csv.reader(pizzycsv)
-    print(tabulate(pretty))
+    print(tabulate(pretty, tablefmt="grid"))
