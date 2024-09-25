@@ -1,13 +1,12 @@
 import sys
 
-def main():
-    if len(sys.argv) != 2: # Checks if it has exactly one in-line argument.
+if len(sys.argv) != 2: # Checks if it has exactly one in-line argument.
         sys.exit("Too many or few in-line arguments.")
 
-    filename = sys.argv[1] # Identify the file name from the argument.
-
-    if not filename.endswith(".py"): # Checks if the file ends with ".py".
+if not filename.endswith(".py"): # Checks if the file ends with ".py".
         sys.exit("Not a Python file")
+
+        filename = sys.argv[1] # Identify the file name from the argument.
 
         # print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
 
@@ -17,9 +16,9 @@ with open(filename) as file:
     for lines in file:
         linecount = lines.strip()
         if linecount.startswith("#"):
-            return countverified + 0
+            countverified + 0
         else:
-            return countverified + 1
+            countverified + 1
 
 
 if __name__ == "__main__":
