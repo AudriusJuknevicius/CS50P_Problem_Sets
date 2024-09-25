@@ -18,6 +18,7 @@ def main():
 with open(filename) as file:
     for lines in file:
         linecount = lines.strip()
+        if linecount.startswith{"#"}
 
 
 if __name__ == "__main__":
