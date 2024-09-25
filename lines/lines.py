@@ -3,10 +3,11 @@ import sys
 if len(sys.argv) != 2: # Checks if it has exactly one in-line argument.
         sys.exit("Too many or few in-line arguments.")
 
+filename = sys.argv[1] # Identify the file name from the argument.
+
 if not filename.endswith(".py"): # Checks if the file ends with ".py".
         sys.exit("Not a Python file")
 
-        filename = sys.argv[1] # Identify the file name from the argument.
 
         # print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
 
