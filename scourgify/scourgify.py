@@ -12,4 +12,4 @@ if not filename1.endswith(".csv"): # Checks if the file ends with ".csv".
 
 
 with open(filename1, "r") as before:
-        
+        step1 = csv.reader
