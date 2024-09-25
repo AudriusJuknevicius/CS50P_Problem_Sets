@@ -9,9 +9,7 @@ def main():
     if not filename.endswith(".py"): # Checks if the file ends with ".py".
         sys.exit("Not a Python file")
 
-        print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
-
-
+        # print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
 
 
 countverified = 0
