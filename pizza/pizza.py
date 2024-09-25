@@ -1,4 +1,5 @@
 import sys
+import csv
 from tabulate import tabulate
 
 if len(sys.argv) != 2: # Checks if it has exactly one in-line argument.
