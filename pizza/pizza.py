@@ -12,5 +12,4 @@ if not filename.endswith(".csv"): # Checks if the file ends with ".py".
 
 with open(filename) as pizzycsv:
     pretty = csv.reader(pizzycsv)
-    table = pretty.split(",")
-    print(tabulate(table))
+    print(tabulate(pretty))
