@@ -14,9 +14,9 @@ def main():
 
 
 
+    countverified = 0
 with open(filename) as file:
     for lines in file:
-        countverified +=1:
         linecount = lines.strip()
 
 
