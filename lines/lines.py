@@ -21,9 +21,13 @@ with open(filename) as file:
         else:
             countverified + 1
 
+    print(countverified)
 
-if __name__ == "__main__":
-    main()
+
+
+
+# if __name__ == "__main__":
+#     main()
 
 
 
