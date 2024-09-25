@@ -11,3 +11,4 @@ if not filename1.endswith(".csv"): # Checks if the file ends with ".csv".
         sys.exit("Not a Comma Seperated Value file")
 
 
+with open()
