@@ -11,6 +11,6 @@ if not filename.endswith(".csv"): # Checks if the file ends with ".py".
         sys.exit("Not a Comma Seperated Value file")
 
 with open(filename) as pizzycsv:
-    reader = csv.reader(pizzycsv)
-    header = next(reader)
-    print(tabulate(reader, header, tablefmt="grid"))
+    reader = csv.reader(pizzycsv) # Reader variable reads the CSV file.
+    header = next(reader) # Extracts the first line from the CSV file.
+    print(tabulate(reader, header, tablefmt="grid")) # Prints whilst seperating the first line with the contents, in the grid format.
