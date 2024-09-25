@@ -10,13 +10,18 @@ filename2 = sys.argv[2] # Identify the second file name from the argument.
 if not filename1.endswith(".csv"): # Checks if the file ends with ".csv".
         sys.exit("Not a Comma Seperated Value file")
 
+
+
 students = []
 
-with open(filename1, "r") as before:
-        reader = csv.DictReader(before)
-        for row in reader:
-                last, first = row["name"].split(",")
-                students.append({"first": first, "last": last, "house": row["house"]})
+try:
+    with open(filename1, "r") as before:
+            reader = csv.DictReader(before)
+            for row in reader:
+                    last, first = row["name"].split(",")
+                    students.append({"first": first, "last": last, "house": row["house"]})
+except FileNotFoundError:
+    sys.exit("Could not read" + filename1)
 
 
 
