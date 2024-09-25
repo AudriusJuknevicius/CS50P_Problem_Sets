@@ -22,7 +22,7 @@ with open(filename1, "r") as before:
 
 
 with open(filename2, "w") as after:
-        for 
-        last, first, house = students.split(",")
+        writer = csv.DictWriter(after,fieldnames=["first", "last", "house"])
+        writer.writerow({"first": first, "last": last, "house": row["house"]})
 
 
