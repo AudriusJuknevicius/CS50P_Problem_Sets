@@ -16,3 +16,8 @@ with open(filename1, "r") as before:
         reader = csv.DictReader(before)
         for row in reader:
                 students.append({"name": row["name"], "house": row["house"]})
+
+
+
+with open(filename2, "w") as after:
+
