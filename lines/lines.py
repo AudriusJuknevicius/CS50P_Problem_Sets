@@ -14,8 +14,9 @@ if not filename.endswith(".py"): # Checks if the file ends with ".py".
 
 countverified = 0
 with open(filename) as file:
-    for lines in file:
-        linecount = lines.strip()
+    lines = file.readlines()
+    for line in lines:
+        linecount = line.strip()
         if linecount.startswith("#"):
             countverified + 0
         else:
