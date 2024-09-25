@@ -8,3 +8,4 @@ filename = sys.argv[1] # Identify the file name from the argument.
 
 if not filename.endswith(".csv"): # Checks if the file ends with ".py".
         sys.exit("Not a Comma Seperated Value file")
+
