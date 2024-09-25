@@ -9,48 +9,18 @@ if not filename.endswith(".py"): # Checks if the file ends with ".py".
         sys.exit("Not a Python file")
 
 
-        # print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
-
-
-
 with open(filename) as file:
     lines = file.readlines()
-    countverified = 0
+    countverified = 0 # Variable to use for counting LOC.
     for line in lines:
-        linecount = line.strip()
-        if linecount.startswith("#") or len(linecount) == 0:
+        linecount = line.strip() # Strips every line in this loop of spaces.
+        if linecount.startswith("#") or len(linecount) == 0: # If line starts with # or nothing, countverified + 0 else +1.
             countverified += 0
         else:
             countverified += 1
 
-    print(countverified)
+    print(countverified) # Prints the LOC.
 
 
 
 
-# if __name__ == "__main__":
-#     main()
-
-
-
-
-
-
-
-#     lambda name, file = sys.argv[1].split(".")
-#     if len(sys.argv[1],if file == "py" return True else: sys.exit) >= 1:
-#         return sys.argv[1]
-#     if file == "py":
-#         return True
-#     else:
-#         sys.exit
-
-
-#     if len(sys.argv[1],if file == "py" return True else: sys.exit) >= 1:
-#         return sys.argv[1]
-#         else:
-#             sys.exit
-
-
-
-# main()
