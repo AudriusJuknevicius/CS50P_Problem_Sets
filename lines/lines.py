@@ -12,15 +12,16 @@ if not filename.endswith(".py"): # Checks if the file ends with ".py".
         # print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
 
 
-countverified = 0
+
 with open(filename) as file:
     lines = file.readlines()
+    countverified = 0
     for line in lines:
         linecount = line.strip()
-        if linecount.startswith("#") or linecount.startswith(""):
-            countverified + 0
+        if linecount.startswith("#") or len(linecount) == 0:
+            countverified += 0
         else:
-            countverified + 1
+            countverified += 1
 
     print(countverified)
 
