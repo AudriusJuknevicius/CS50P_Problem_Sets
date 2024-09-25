@@ -17,6 +17,7 @@ students = []
 try:
     with open(filename1, "r") as before:
             reader = csv.DictReader(before)
+            header = next(before)
             for row in reader:
                     last, first = row["name"].split(",")
                     students.append({"first": first, "last": last, "house": row["house"]})
