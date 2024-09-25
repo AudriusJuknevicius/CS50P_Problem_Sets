@@ -28,7 +28,7 @@ except FileNotFoundError:
 
 with open(filename2, "w") as after:
         writer = csv.DictWriter(after,fieldnames=["first", "last", "house"])
-        for row in students:
+        for student in students:
                writer.writerow({"first": first, "last": last, "house": row["house"]})
 
 
