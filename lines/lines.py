@@ -6,7 +6,7 @@ def main():
 
     filename = sys.argv[1] # Identify the file name from the argument.
 
-    if not filename.endswith(".py"): # Checks if the file ends with .py
+    if not filename.endswith(".py"): # Checks if the file ends with ".py".
         sys.exit("Not a Python file")
 
         print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
