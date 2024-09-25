@@ -14,11 +14,14 @@ def main():
 
 
 
-    countverified = 0
+countverified = 0
 with open(filename) as file:
     for lines in file:
         linecount = lines.strip()
-        if linecount.startswith{"#"}
+        if linecount.startswith{"#"}:
+            return countverified + 0
+        else:
+            return countverified + 1
 
 
 if __name__ == "__main__":
