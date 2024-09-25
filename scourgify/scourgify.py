@@ -19,6 +19,10 @@ with open(filename1, "r") as before:
 
 
 
+
+
 with open(filename2, "w") as after:
-        for student in 
+        for l
+        last, first, house = students.split(",")
+
 
