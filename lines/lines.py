@@ -13,9 +13,10 @@ def main():
 
 
 
+
 with open(filename) as file:
     for lines in file:
-        linecount = lines.rstrip()
+        linecount = lines.strip()
 
 
 if __name__ == "__main__":
