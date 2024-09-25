@@ -10,3 +10,4 @@ filename2 = sys.argv[2] # Identify the second file name from the argument.
 if not filename1.endswith(".csv"): # Checks if the file ends with ".csv".
         sys.exit("Not a Comma Seperated Value file")
 
+
