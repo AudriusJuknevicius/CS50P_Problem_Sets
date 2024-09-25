@@ -11,4 +11,4 @@ if not filename.endswith(".csv"): # Checks if the file ends with ".py".
 
 with open(filename) as pizzycsv:
     pretty = csv.reader(pizzycsv)
-    pretty = 
+    table = pretty.split(",")
