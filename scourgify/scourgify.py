@@ -18,7 +18,7 @@ try:
     with open(filename1, "r") as before:
             reader = csv.DictReader(before)
             for row in reader:
-                    last, first = row["name"].split(",")
+                    last, first = row["name"].split(", ")
                     students.append({"first": first, "last": last, "house": row["house"]})
 except FileNotFoundError:
     sys.exit("Could not read" + filename1)
