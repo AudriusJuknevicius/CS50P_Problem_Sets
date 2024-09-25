@@ -12,6 +12,12 @@ def main():
         print(f"Processing file: {filename}") # Continues with the program if the previous two conditions are correct.
 
 
+
+with open(filename) as file:
+    for lines in file:
+        linecount = lines.rstrip()
+
+
 if __name__ == "__main__":
     main()
 
