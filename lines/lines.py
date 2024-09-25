@@ -17,7 +17,7 @@ with open(filename) as file:
     lines = file.readlines()
     for line in lines:
         linecount = line.strip()
-        if linecount.startswith("#"):
+        if linecount.startswith("#") or linecount.startswith(""):
             countverified + 0
         else:
             countverified + 1
