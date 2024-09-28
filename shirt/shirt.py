@@ -12,23 +12,28 @@ if not filename1.endswith(".py"): # Checks if the file ends with ".csv".
 
 
 
-students = []
-
-try:
-    with open(filename1, "r") as before:
-            reader = csv.DictReader(before)
-            for row in reader:
-                    last, first = row["name"].split(", ")
-                    students.append({"first": first, "last": last, "house": row["house"]})
-except FileNotFoundError:
-    sys.exit("Could not read" + filename1)
 
 
 
 
-with open(filename2, "w") as after:
-        writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
-        writer.writeheader()
-        for student in students:
-               writer.writerow(student)
+
+# students = []
+
+# try:
+#     with open(filename1, "r") as before:
+#             reader = csv.DictReader(before)
+#             for row in reader:
+#                     last, first = row["name"].split(", ")
+#                     students.append({"first": first, "last": last, "house": row["house"]})
+# except FileNotFoundError:
+#     sys.exit("Could not read" + filename1)
+
+
+
+
+# with open(filename2, "w") as after:
+#         writer = csv.DictWriter(after, fieldnames=["first", "last", "house"])
+#         writer.writeheader()
+#         for student in students:
+#                writer.writerow(student)
 
