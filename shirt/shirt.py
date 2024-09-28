@@ -11,7 +11,7 @@ if not filename1.endswith(".py"): # Checks if the file ends with ".csv".
         sys.exit("Not a Comma Seperated Value file")
 
 
-image.open(fp: filename1 | )
+image.open(fp: filename1)
 
 
 
