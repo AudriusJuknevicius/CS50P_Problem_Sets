@@ -17,9 +17,9 @@ fe2 = filename2.lower().split(".")
 #         sys.exit("Input extension is not the same as the output's")
 
 
-shirt = Image.open(filename1)
+shirt = Image.open(filename2)
 size = shirt.size
-
+shirt = shirt.Imageops.fit(Image: shirt, size:)
 
 
 
