@@ -10,6 +10,11 @@ filename2 = sys.argv[2] # Identify the second file name as the output.
 if not filename1.endswith(".py"): # Checks if the file ends with ".csv".
         sys.exit("Not a Comma Seperated Value file")
 
+if not (filename1.lower().endswith(".jpg") or
+        filename1.lower().endswith(".jpeg") or
+        filename.lower().endswith(".png")):
+        sys.exit("File must end with .jpeg, .jpeg or .png")
+
 
 image.open(fp: filename1)
 
