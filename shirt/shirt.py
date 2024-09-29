@@ -1,5 +1,5 @@
 import sys
-from PIL import Image
+from PIL import Image, ImageOps
 
 if len(sys.argv) != 3: # Checks if it has exactly one in-line argument.
         sys.exit("Too many or few in-line arguments.")
@@ -21,7 +21,8 @@ person = Image.open(filename1)
 shirt = Image.open(filename2)
 personsize = person.size
 shirtsize = shirt.size
-shirt.Imageops.fit(image: person, size: shirtsize)
+shirt_resized = ImageOps.fit(shirt, person.size)
+shirt.Imageops.fit(image: , size: shirtsize)
 photo.paste(shirt, shirt)
 
 
