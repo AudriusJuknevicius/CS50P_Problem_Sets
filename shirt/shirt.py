@@ -10,6 +10,8 @@ filename2 = sys.argv[2] # Identify the second file name as the output.
 if not (filename1.lower().endswith(".jpg", ".jpeg", ".png")):
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
+filenameextension1 = filename1.lower().split(".")
+
 
 image.open(fp: filename1)
 
