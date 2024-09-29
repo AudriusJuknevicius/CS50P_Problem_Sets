@@ -9,10 +9,12 @@ def main():
 def validate(ip):
     matches = re.search(r"^(.+)\.(.+)\.(.+)\.(.+)$", ip)
 
-    if 0 <= matches.group(1) <= 255:
-        return True
-    else:
-        return False
+group1 = int(matches.group(1))
+
+if 0 <= group1 <= 255:
+    return True
+else:
+    return False
 
 
 
