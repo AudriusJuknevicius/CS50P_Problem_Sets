@@ -12,7 +12,7 @@ if not filename1.endswith(".py"): # Checks if the file ends with ".csv".
 
 if not (filename1.lower().endswith(".jpg") or
         filename1.lower().endswith(".jpeg") or
-        filename.lower().endswith(".png")):
+        filename1.lower().endswith(".png")):
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
 
