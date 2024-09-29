@@ -7,14 +7,14 @@ if len(sys.argv) != 3: # Checks if it has exactly one in-line argument.
 filename1 = sys.argv[1] # Identify the first file name as the input.
 filename2 = sys.argv[2] # Identify the second file name as the output.
 
-if not filename1.lower().endswith((".jpg", ".jpeg", ".png")):
+if not filename1.lower().endswith((".jpg", ".jpeg", ".png")):  # Checks if the first input has the right file type.
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
-fe1 = filename1.lower().split(".")
+fe1 = filename1.lower().split(".") # Splits filename 1 and 2 to just their extensions.
 fe2 = filename2.lower().split(".")
 
-if not fe1 == fe2:
-        sys.exit("Input extension is not the same as the output's")
+# if not fe1 == fe2:
+#         sys.exit("Input extension is not the same as the output's")
 
 
 shirt = Image.open(filename1)
