@@ -1,3 +1,4 @@
+# https://cs50.harvard.edu/python/2022/psets/6/shirt/
 import sys
 from PIL import Image, ImageOps
 
@@ -17,16 +18,16 @@ if not fe1 == fe2:
         sys.exit("Input extension is not the same as the output's") # Checks input and output extensions.
 
 try:
-        person = Image.open(filename1) # Opens before file image.
-        shirt = Image.open("shirt.png") # Opens the shirt image file.
+        person = Image.open(filename1) # Opens the input image file specified by filename1.
+        shirt = Image.open("shirt.png")  # Opens the shirt image file named "shirt.png".
 
         shirtsize = shirt.size # shirtsize variable gains the size information from shirt image file.
 
-        person_resized = ImageOps.fit(person, shirtsize) # 
-        person_resized.paste(shirt, shirt)
-        person_resized.save(filename2)
+        person_resized = ImageOps.fit(person, shirtsize) # Resizes the person image to match the size of the shirt image while maintaining its aspect ratio.
+        person_resized.paste(shirt, shirt) # Pastes the shirt image onto the resized person image using the shirt image as a mask for transparency.
+        person_resized.save(filename2) # Saves the final combined image to the file specified by filename2.
 except FileNotFoundError:
-    sys.exit("Could not read" + filename1)
+    sys.exit("Could not read" + filename1) # Exits the program with an error message if the input file specified by filename1 is not found.
 
 
 
