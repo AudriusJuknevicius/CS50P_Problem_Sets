@@ -20,10 +20,9 @@ fe2 = filename2.lower().split(".")
 person = Image.open(filename1)
 shirt = Image.open("shirt.png")
 
-personsize = person.size
 shirtsize = shirt.size
 
-person_resized = ImageOps.fit(person, shirt.size)
+person_resized = ImageOps.fit(person, shirtsize)
 person_resized.paste(shirt, shirt)
 person.save(filename2)
 
