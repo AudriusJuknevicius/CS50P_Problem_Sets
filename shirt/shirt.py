@@ -1,4 +1,5 @@
 import sys
+from PIL import image
 
 if len(sys.argv) != 3: # Checks if it has exactly one in-line argument.
         sys.exit("Too many or few in-line arguments.")
@@ -14,6 +15,9 @@ fe2 = filename2.lower().split(".")
 
 if not fe1 == fe2:
         sys.exit("Input extension is not the same as the output's")
+
+
+
 
 
 # image.open(fp: filename1)
