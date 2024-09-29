@@ -18,7 +18,7 @@ fe2 = filename2.lower().split(".")
 
 
 person = Image.open(filename1)
-shirt = Image.open(filename2)
+shirt = Image.open("shirt.png")
 
 personsize = person.size
 shirtsize = shirt.size
