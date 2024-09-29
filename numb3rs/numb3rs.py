@@ -8,7 +8,9 @@ def main():
 
 def validate(ip):
     if re.search(r"^[0-9]\.[0-9]\.[0-9]\.[0-9]$", ipv4):
-        return ipv4
+        return True
+    else:
+        return False
 
 
 
