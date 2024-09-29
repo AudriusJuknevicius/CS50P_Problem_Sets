@@ -22,7 +22,7 @@ shirt = Image.open(filename2)
 personsize = person.size
 shirtsize = shirt.size
 shirt.Imageops.fit(Image: person, size: shirtsize)
-
+photo.paste(shirt, shirt)
 
 
 
