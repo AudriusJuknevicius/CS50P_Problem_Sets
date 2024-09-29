@@ -17,10 +17,7 @@ if not fe1 == fe2:
         sys.exit("Input extension is not the same as the output's")
 
 
-
-
-
-# image.open(fp: filename1)
+image.open(fp: filename1)
 
 
 
