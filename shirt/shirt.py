@@ -10,7 +10,7 @@ if not filename1.lower().endswith((".jpg", ".jpeg", ".png")):
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
 fe1 = filename1.lower().split(".")
-fe2 = filename1.lower().split(".")
+fe2 = filename2.lower().split(".")
 
 if not fe1 == fe2:
         sys.exit("Input extension is not the same as the output's")
