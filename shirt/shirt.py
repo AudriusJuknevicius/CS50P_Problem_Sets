@@ -23,8 +23,8 @@ shirt = Image.open("shirt.png")
 personsize = person.size
 shirtsize = shirt.size
 
-shirt_resized = ImageOps.fit(person, shirt.size)
-person.paste(shirt_resized, shirt_resized)
+person_resized = ImageOps.fit(person, shirt.size)
+person_resized.paste(shirt, shirt)
 person.save(filename2)
 
 
