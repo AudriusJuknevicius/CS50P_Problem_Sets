@@ -7,12 +7,9 @@ def main():
 
 
 def parse(s):
-    watch = re.sub(r"(.+)https?://(www\.)?youtube\.com/embed/(.+)/(.+)$", s, re.IGNORECASE)
-
-
-if matches:
-    print(f"Username:", matches.group(2))
-
+    if watch := re.sub(r"(.+)https?://(www\.)?youtube\.com/embed/(.+)/(.+)$", "", s, re.IGNORECASE):
+        print(watch)
+    return False
 
 
 
