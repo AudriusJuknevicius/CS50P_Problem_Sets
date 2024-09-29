@@ -7,12 +7,7 @@ if len(sys.argv) != 3: # Checks if it has exactly one in-line argument.
 filename1 = sys.argv[1] # Identify the first file name as the input.
 filename2 = sys.argv[2] # Identify the second file name as the output.
 
-if not filename1.endswith(".py"): # Checks if the file ends with ".csv".
-        sys.exit("Not a Comma Seperated Value file")
-
-if not (filename1.lower().endswith(".jpg") or
-        filename1.lower().endswith(".jpeg") or
-        filename1.lower().endswith(".png")):
+if not (filename1.lower().endswith(".jpg", ".jpeg", ".png")):
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
 
