@@ -1,5 +1,5 @@
 import sys
-from PIL import image
+from PIL import Image
 
 if len(sys.argv) != 3: # Checks if it has exactly one in-line argument.
         sys.exit("Too many or few in-line arguments.")
