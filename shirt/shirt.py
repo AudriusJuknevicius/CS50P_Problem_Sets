@@ -6,16 +6,14 @@ if len(sys.argv) != 3: # Checks if it has exactly one in-line argument.
 filename1 = sys.argv[1] # Identify the first file name as the input.
 filename2 = sys.argv[2] # Identify the second file name as the output.
 
-print(filename1, filename2)
-
-if not (filename1.lower().endswith(".jpg", ".jpeg", ".png")):
+if not filename1.lower().endswith((".jpg", ".jpeg", ".png")):
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
-# filenameextension1 = filename1.lower().split(".")
-# filenameextension2 = filename1.lower().split(".")
+filenameextension1 = filename1.lower().split(".")
+filenameextension2 = filename1.lower().split(".")
 
-# print(filenameextension1)
-# print(filenameextension2)
+print(filenameextension1)
+print(filenameextension2)
 
 
 
