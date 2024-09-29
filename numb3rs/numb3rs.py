@@ -8,15 +8,15 @@ def main():
 
 def validate(ip):
     if matches := re.search(r"^(\d+)\.(\d+)\.(\d+)\.(\d+)$", ip):
-
-group1 = int(matches.group(1))
-group2 = int(matches.group(2))
-group3 = int(matches.group(3))
-group4 = int(matches.group(4))
-
-if 0 <= group1 <= 255:
-    return True
-else:
+        group1 = int(matches.group(1))
+        group2 = int(matches.group(2))
+        group3 = int(matches.group(3))
+        group4 = int(matches.group(4))
+        try:
+            if 0 <= group1 <= 255:
+                return True
+            else:
+                return False
     return False
 
 
