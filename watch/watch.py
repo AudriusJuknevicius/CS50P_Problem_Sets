@@ -9,7 +9,8 @@ def main():
 def parse(s):
     if matches := re.search(r"youtube\.com/embed/(\w+)", s, re.IGNORECASE):
         print("https://youtu.be/"+matches.group(1))
-    return False
+    else:
+        return False
 
 
 
