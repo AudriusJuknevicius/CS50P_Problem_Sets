@@ -13,8 +13,8 @@ if not filename1.lower().endswith((".jpg", ".jpeg", ".png")):  # Checks if the f
 fe1 = filename1.lower().split(".") # Splits filename 1 and 2 to just their extensions.
 fe2 = filename2.lower().split(".")
 
-# if not fe1 == fe2:
-#         sys.exit("Input extension is not the same as the output's")
+if not fe1 == fe2:
+        sys.exit("Input extension is not the same as the output's")
 
 
 person = Image.open(filename1)
@@ -24,7 +24,7 @@ shirtsize = shirt.size
 
 person_resized = ImageOps.fit(person, shirtsize)
 person_resized.paste(shirt, shirt)
-person.save(filename2)
+person_resized.save(filename2)
 
 
 
