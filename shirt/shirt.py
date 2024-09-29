@@ -11,9 +11,14 @@ if not (filename1.lower().endswith(".jpg", ".jpeg", ".png")):
         sys.exit("File must end with .jpeg, .jpeg or .png")
 
 filenameextension1 = filename1.lower().split(".")
+filenameextension2 = filename1.lower().split(".")
+
+print(filenameextension1)
+print(filenameextension2)
 
 
-image.open(fp: filename1)
+
+# image.open(fp: filename1)
 
 
 
