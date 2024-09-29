@@ -12,13 +12,10 @@ def validate(ip):
         group2 = int(matches.group(2))
         group3 = int(matches.group(3))
         group4 = int(matches.group(4))
-        try:
-            if 0 <= group1 <= 255:
-                return True
-            else:
-                return False
-    return False
-
+        if 0 <= group1 <= 255 and 0 <= group2 <= 255 and 0 <= group3 <= 255 and 0 <= group4 <= 255:
+            return True
+    else:
+        return False
 
 
 
