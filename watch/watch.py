@@ -7,8 +7,8 @@ def main():
 
 
 def parse(s):
-    if watch := re.search(r"^(.+)youtube\.com/embed/(.+)/(.+)$", "", s, re.IGNORECASE):
-        print(watch)
+    if matches := re.search(r"(.+)youtube\.com/embed/(/w)/W(.+)", s, re.IGNORECASE):
+        print(match.group(2))
     return False
 
 
