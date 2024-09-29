@@ -23,7 +23,7 @@ personsize = person.size
 shirtsize = shirt.size
 shirt_resized = ImageOps.fit(shirt, person.size)
 person.paste(shirt_resized, (0, 0), shirt_resized)
-person.save("after." + fe1)
+person.save(filename2)
 
 
 
