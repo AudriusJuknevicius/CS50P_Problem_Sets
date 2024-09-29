@@ -22,8 +22,8 @@ shirt = Image.open(filename2)
 personsize = person.size
 shirtsize = shirt.size
 shirt_resized = ImageOps.fit(shirt, person.size)
-shirt.Imageops.fit(image: , size: shirtsize)
-photo.paste(shirt, shirt)
+person.paste(shirt_resized, (0, 0), shirt_resized)
+person.save("after." + fe1)
 
 
 
