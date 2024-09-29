@@ -7,10 +7,11 @@ def main():
 
 
 def parse(s):
-    ...
+    matches = re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)
+if matches:
+    print(f"Username:", matches.group(2))
 
 
-...
 
 
 if __name__ == "__main__":
