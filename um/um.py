@@ -7,7 +7,8 @@ def main():
 
 
 def count(s):
-    for number re.findall(r".+um?.+)
+    if cases := re.findall(r"^.+um?.+$", s, re.IGNORECASE):
+        return cases
 
 
 ...
