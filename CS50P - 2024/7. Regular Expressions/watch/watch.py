@@ -12,6 +12,8 @@ def parse(s):
             return "https://youtu.be/" + matches.group(2)
         return None
 
+def time_24hrs()
+    
 
 
 if __name__ == "__main__":
