@@ -7,10 +7,8 @@ def main():
 
 
 def parse(s):
-    if ":" in s:
-        if matches := re.search(r"^ to $")", s, re.IGNORECASE):
-            return "https://youtu.be/" + matches.group(2)
-        return None
+    if matches := re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) to (\d{1,2}):?(\d{2})? (AM|PM)$")", s, re.IGNORECASE):
+        return matches
 
 def time_24hrs(time)
     hours, minutes = map(float, time.split(":"))
