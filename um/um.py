@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    re.findall(r".+um)
+    for number re.findall(r".+um?.+)
 
 
 ...
