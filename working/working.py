@@ -42,9 +42,15 @@
 
 
 import re
+import sys
 
 def main():
-    print(convert(input("Hours: ")))
+    # Prompt user for input and convert the time
+    try:
+        print(convert(input("Hours: ")))
+    except ValueError as e:
+        # Catch and print any ValueErrors raised during conversion
+        print(f"Error: {e}")
 
 def convert(s):
     # Define regex pattern to match valid input format
@@ -63,16 +69,14 @@ def convert(s):
     minutes2 = minutes2 or "00"
 
     # Validate hours (should be between 1 and 12)
-    if not (1 <= int(hours1) <= 12) or not (1 <= int(hours2) <= 12):
-        raise ValueError("Invalid hour value")
+    validate_hours(hours1, hours2)
 
     # Convert hours1 and hours2 to 24-hour format
     hours1_24 = convert_to_24(hours1, meridiem1)
     hours2_24 = convert_to_24(hours2, meridiem2)
 
     # Check for invalid minute values
-    if not (0 <= int(minutes1) < 60) or not (0 <= int(minutes2) < 60):
-        raise ValueError("Invalid minute value")
+    validate_minutes(minutes1, minutes2)
 
     # Return formatted 24-hour string
     return f"{hours1_24:02}:{minutes1} to {hours2_24:02}:{minutes2}"
@@ -84,3 +88,14 @@ def convert_to_24(hours, meridiem):
     elif meridiem == "PM" and hours != 12:
         return hours + 12  # Convert to 24-hour time for PM, except for noon
     return hours
+
+def validate_hours(hours1, hours2):
+    if not (1 <= int(hours1) <= 12) or not (1 <= int(hours2) <= 12):
+        raise ValueError("Invalid hour value")
+
+def validate_minutes(minutes1, minutes2):
+    if not (0 <= int(minutes1) < 60) or not (0 <= int(minutes2) < 60):
+        raise ValueError("Invalid minute value")
+
+if __name__ == "__main__":
+    main()
