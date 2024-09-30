@@ -11,8 +11,6 @@ def count(s):
         return len(cases)
 
 
-...
-
 
 if __name__ == "__main__":
     main()
