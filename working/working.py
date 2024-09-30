@@ -10,10 +10,19 @@ def convert(s):
     if matches := re.search(r"^(\d{1,2}):?(\d{2})? (AM|PM) to (\d{1,2}):?(\d{2})? (AM|PM)$", s, re.IGNORECASE):
         return matches.groups()
 
-# def time_24hrs(time)
-#     hours, minutes = map(float, time.split(":"))
-#     time_24h = hours + (minutes / 60)
-#     return time_24h
+
+def check_minutes(m):
+    if 
+
+
+
+
+
+
+def time_24hrs(time)
+    hours, minutes = map(float, time.split(":"))
+    time_24h = hours + (minutes / 60)
+    return time_24h
 
 
 
