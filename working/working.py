@@ -48,9 +48,7 @@ def main():
     # Prompt user for input and convert the time
     try:
         print(convert(input("Hours: ")))
-    except ValueError as e:
-        # Catch and print any ValueErrors raised during conversion
-        print(f"Error: {e}")
+    except ValueError
 
 def convert(s):
     # Define regex pattern to match valid input format
