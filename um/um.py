@@ -7,8 +7,8 @@ def main():
 
 
 def count(s):
-    if cases := re.findall(r".+\w+um\.+", s, re.IGNORECASE):
-        return cases
+    if cases := re.findall(r"\bum\b", s, re.IGNORECASE):
+        return len(cases)
 
 
 ...
