@@ -2,11 +2,12 @@ import pytest
 from working import convert
 
 def test_convert():
-    assert test_convert("001.001.001.001") == True
-    assert test_convert("0.0.0.0") == True
-    assert test_convert("255.255.255.255") == True
-    assert test_convert("256.255.255.255") == False
-    assert test_convert("255.255.255.256") == False
-    assert test_convert("") == False
-    assert test_convert("?.?.?.?") == False
-    assert test_convert("...") == False
+    assert test_convert("9:00 AM to 5:00 PM") == "09:00 to 17:00"
+    assert test_convert("9 AM to 5 PM") == "09:00 to 17:00"
+    assert test_convert("9:00 AM to 5 PM") == "09:00 to 17:00"
+    assert test_convert("9 AM to 5:00 PM") == "09:00 to 17:00"
+    assert test_convert("") == "09:00 to 17:00"
+    assert test_convert("") == "09:00 to 17:00"
+    assert test_convert("") == "09:00 to 17:00"
+    assert test_convert("") == "09:00 to 17:00"
+
