@@ -59,6 +59,10 @@ def convert(s):
     minutes1 = minutes1 or "00"
     minutes2 = minutes2 or "00"
 
+    # Validate hours (should be between 1 and 12)
+    if not (1 <= int(hours1) <= 12) or not (1 <= int(hours2) <= 12):
+        raise ValueError("Invalid hour value")
+
     # Convert hours1 and hours2 to 24-hour format
     hours1_24 = convert_to_24(hours1, meridiem1)
     hours2_24 = convert_to_24(hours2, meridiem2)
