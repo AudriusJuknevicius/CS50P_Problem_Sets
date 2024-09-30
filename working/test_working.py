@@ -18,7 +18,7 @@ def test_convert():
     with pytest.raises(ValueError): convert("13:00 AM to 5:00 PM")
     with pytest.raises(ValueError): convert("9:00 AM to 0:00 PM")
 
-        # Test invalid formats
+    # Test invalid formats
     with pytest.raises(ValueError): convert("random string")
     with pytest.raises(ValueError): convert("")
 
