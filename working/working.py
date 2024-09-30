@@ -43,6 +43,9 @@
 
 import re
 
+def main():
+    print(convert(input("Hours: ")))
+
 def convert(s):
     # Define regex pattern to match valid input format
     pattern = r"^(\d{1,2}):?(\d{2})? (AM|PM) to (\d{1,2}):?(\d{2})? (AM|PM)$"
