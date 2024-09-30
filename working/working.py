@@ -57,7 +57,7 @@ def convert(s):
     # Search for the pattern in the input string
     matches = re.match(pattern, s)
     if not matches:
-        raise ValueError("Invalid input format")
+        raise ValueError
 
     # Extract components from regex groups
     hours1, minutes1, meridiem1, hours2, minutes2, meridiem2 = matches.group(1, 2, 3, 4, 5, 6)
@@ -89,11 +89,11 @@ def convert_to_24(hours, meridiem):
 
 def validate_hours(hours1, hours2):
     if not (1 <= int(hours1) <= 12) or not (1 <= int(hours2) <= 12):
-        raise ValueError("Invalid hour value")
+        raise ValueError
 
 def validate_minutes(minutes1, minutes2):
     if not (0 <= int(minutes1) < 60) or not (0 <= int(minutes2) < 60):
-        raise ValueError("Invalid minute value")
+        raise ValueError
 
 if __name__ == "__main__":
     main()
