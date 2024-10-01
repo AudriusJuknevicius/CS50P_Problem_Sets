@@ -10,7 +10,7 @@ def count(s):
     if cases := re.findall(r"\bum\b", s, re.IGNORECASE):
         return len(cases)
     else:
-        return None
+        return 0
 
 
 
