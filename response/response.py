@@ -1,17 +1,26 @@
-import validators
+# import validators
 
 
 
-def main():
-    print(email_validate(input("Email: ")))
+# def main():
+#     print(email_validate(input("Email: ")))
 
 
-def email_validate(e):
-    if e := validators.email("someone@example.com"):
-        return "Valid"
-    else:
-        return "Invalid"
+# def email_validate(e):
+#     if e := validators.email("someone@example.com"):
+#         return "Valid"
+#     else:
+#         return "Invalid"
 
+
+# if __name__ == "__main__":
+#     main()
+
+
+from validator_collection import validators, checkers, errors
+
+email_address = validators.email('test@domain.dev')
+# The value of email_address will now be "test@domain.dev"
 
 email_address = validators.email('this-is-an-invalid-email')
 # Will raise a ValueError
@@ -24,10 +33,10 @@ except errors.EmptyValueError:
 except errors.InvalidEmailError:
     # More handlign logic goes here
 
-e = validators.email(None, allow_empty = True)
+email_address = validators.email(None, allow_empty = True)
 # The value of email_address will now be None
 
-e = validators.email('', allow_empty = True)
+email_address = validators.email('', allow_empty = True)
 # The value of email_address will now be None
 
 is_email_address = checkers.is_email('test@domain.dev')
@@ -39,5 +48,3 @@ is_email_address = checkers.is_email('this-is-an-invalid-email')
 is_email_address = checkers.is_email(None)
 # The value of is_email_address will now be False
 
-if __name__ == "__main__":
-    main()
