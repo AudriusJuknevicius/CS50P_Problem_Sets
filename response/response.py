@@ -1,4 +1,4 @@
-from validator_collection import validators
+import validators
 
 
 
@@ -7,7 +7,7 @@ def main():
 
 
 def email_validate(e):
-    e = validators.email
+    e = validators.email("someone@example.com")
 
 if __name__ == "__main__":
     main()
