@@ -8,6 +8,7 @@ def main():
 
 def email_validate(e):
     e = validators.email("someone@example.com")
+    return e
 
 if __name__ == "__main__":
     main()
