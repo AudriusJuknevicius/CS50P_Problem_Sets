@@ -7,8 +7,10 @@ def main():
 
 
 def email_validate(e):
-    e = validators.email("someone@example.com")
-    return e
+    if e := validators.email("someone@example.com"):
+        return "Valid"
+    else:
+        return "Invalid"
 
 if __name__ == "__main__":
     main()
