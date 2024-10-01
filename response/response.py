@@ -7,7 +7,7 @@ def main():
 
 
 def email_validate(e):
-    if e := validators.email("someone@example.com"):
+    if e := validators.email(e):
         return "Valid"
     else:
         return "Invalid"
