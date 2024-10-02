@@ -1,6 +1,7 @@
 from datetime import date, timedelta
 
 
+
 def main():
     print(date2time(input("Date: ")))
 
@@ -8,6 +9,8 @@ def main():
 def date2time(userinput):
 birth = date.fromisoformat(userinput)
 today = date.today()
+totaltime = today - birth
+    if totaltime not 0:
 
 
 
