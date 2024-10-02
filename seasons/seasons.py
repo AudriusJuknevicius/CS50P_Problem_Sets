@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 
 
 def main():
@@ -10,6 +10,7 @@ def date2time(userinput):
 
 def tdelta():
     currenttime = date.today
+    seconds = timedelta.total_seconds()
 
 
 classmethod date.today()
