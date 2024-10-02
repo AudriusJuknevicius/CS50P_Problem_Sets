@@ -1,5 +1,5 @@
 from datetime import date, timedelta
-from num2words import num2words
+import inflect
 
 
 
@@ -19,3 +19,4 @@ def date2time(userinput):
 
 if __name__ == "__main__":
     main()
+words = p.number_to_words(1234, andword="")
