@@ -1,7 +1,6 @@
 from datetime import date, timedelta
 import inflect
-
-
+p = inflect.engine()
 
 def main():
     print(date2time(input("Date: ")))
