@@ -16,13 +16,17 @@ from seasons import date2time
 from datetime import date, timedelta
 
 def test_date2time():
-    # Use a known date (e.g., today's date) and subtract a fixed number of days
     today = date.today()
+
+    # Test for 2 days ago
     two_days_ago = today - timedelta(days=2)
+    expected_minutes = 2 * 24 * 60  # 2 days in minutes
+    assert date2time(str(two_days_ago)) == f"{expected_minutes} minutes"
 
-    # Test if the function returns the correct result for 2 days ago
-    assert "two thousand eight hundred eighty minutes" in date2time(str(two_days_ago))
-
-    # Another test case, e.g., 1 day ago
+    # Test for 1 day ago
     one_day_ago = today - timedelta(days=1)
-    assert "one thousand four hundred forty minutes" in date2time(str(one_day_ago))
+    expected_minutes = 1 * 24 * 60  # 1 day in minutes
+    assert date2time(str(one_day_ago)) == f"{expected_minutes} minutes"
+
+    # Test for today's date (should return 0 minutes)
+    assert date2time(str(today)) == "0 minutes"
