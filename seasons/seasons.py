@@ -8,7 +8,8 @@ def main():
 def date2time(userinput):
     return date.fromisoformat(userinput)
 
-
+def tdelta():
+    
 
 
 if __name__ == "__main__":
