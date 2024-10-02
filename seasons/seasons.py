@@ -10,8 +10,8 @@ def main():
 def date2time(userinput):
     birth = date.fromisoformat(userinput)
     today = date.today()
-    totaltime.days = today - birth
-    if not totaltime <=0:
+    totaltime = today - birth
+    if not totaltime.days <=0:
         return num2words(totaltime * 1440)
     raise ValueError("Invalid Input")
 
