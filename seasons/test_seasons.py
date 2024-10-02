@@ -1,8 +1,9 @@
 import pytest
 from seasons import date2time
 
-    today = date.tiday()
-    
 
 def test_date2time():
-    assert date2time("hello, um, world") == 1
+today = date.today()
+str.capitalize((p.number_to_words(totaltime.days * 1440, andword="") + " minutes"))
+    assert date2time("2000-12-12") == "Eleven million, nine hundred forty-four thousand, eight hundred minutes"
+    assert date2time("2007-12-31") == "Eight million, two hundred thirty-six thousand, eight hundred minutes"
