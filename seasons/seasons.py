@@ -1,5 +1,6 @@
-from datetime import date, timedelta
 import inflect
+import sys
+from datetime import date, timedelta
 p = inflect.engine()
 
 def main():
@@ -12,7 +13,8 @@ def date2time(userinput):
     totaltime = today - birth
     if not totaltime.days <=0:
         return str.capitalize((p.number_to_words(totaltime.days * 1440, andword="") + " minutes"))
-    raise ValueError("Invalid Input")
+    else:
+        sys.exit
 
 
 
