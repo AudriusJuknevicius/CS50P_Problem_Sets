@@ -16,8 +16,5 @@ def date2time(userinput):
 
 
 
-classmethod date.today()
-
-
 if __name__ == "__main__":
     main()
