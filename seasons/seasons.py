@@ -12,7 +12,7 @@ def date2time(userinput):
     today = date.today()
     totaltime.days = today - birth
     if not totaltime <=0:
-        return num2words(finaltime = int(totaltime * 1440))
+        return num2words(totaltime * 1440))
 
 
 
