@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+from num2words import num2words
 
 
 
@@ -7,16 +8,12 @@ def main():
 
 
 def date2time(userinput):
-birth = date.fromisoformat(userinput)
-today = date.today()
-totaltime = today - birth
-    if totaltime not 0:
+    birth = date.fromisoformat(userinput)
+    today = date.today()
+    totaltime = today - birth
+    if not totaltime <=0:
+        return num2words(finaltime = int(totaltime * 24 * 60))
 
-
-
-def tdelta():
-    currenttime = date.today
-    seconds = timedelta.total_seconds()
 
 
 classmethod date.today()
