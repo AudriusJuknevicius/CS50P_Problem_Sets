@@ -6,8 +6,9 @@ def main():
 
 
 def date2time(userinput):
-    birth = date.fromisoformat(userinput)
-    today = date.today()
+birth = date.fromisoformat(userinput)
+today = date.today()
+
 
 
 def tdelta():
