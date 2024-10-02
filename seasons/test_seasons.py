@@ -18,15 +18,15 @@ from datetime import date, timedelta
 def test_date2time():
     today = date.today()
 
-    # Test for 2 days ago
-    two_days_ago = today - timedelta(days=2)
-    expected_minutes = 2 * 24 * 60  # 2 days in minutes
-    assert date2time(str(two_days_ago)) == f"{expected_minutes} minutes"
+    # Test for a date one year ago
+    one_year_ago = today - timedelta(days=365)
+    expected_minutes = (today - one_year_ago).days * 24 * 60
+    assert date2time(str(one_year_ago)) == f"{expected_minutes} minutes"
 
-    # Test for 1 day ago
-    one_day_ago = today - timedelta(days=1)
-    expected_minutes = 1 * 24 * 60  # 1 day in minutes
-    assert date2time(str(one_day_ago)) == f"{expected_minutes} minutes"
+    # Test for a date two years ago
+    two_years_ago = today - timedelta(days=730)  # 365 * 2
+    expected_minutes = (today - two_years_ago).days * 24 * 60
+    assert date2time(str(two_years_ago)) == f"{expected_minutes} minutes"
 
     # Test for today's date (should return 0 minutes)
     assert date2time(str(today)) == "0 minutes"
