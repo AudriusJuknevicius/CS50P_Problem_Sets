@@ -4,6 +4,7 @@ from datetime import date, timedelta
 
 def test_date2time():
     today = date.today()
+    date.fromisoformat(userinput)
     assert date2time(today.day - 365) == 365
     # assert count("Um, thanks for the album.") == 1
     # assert count("yummy") == 0
