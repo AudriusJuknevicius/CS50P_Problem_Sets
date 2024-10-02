@@ -11,7 +11,7 @@ def date2time(userinput):
     today = date.today()
     totaltime = today - birth
     if not totaltime.days <=0:
-        return p.number_to_words(totaltime.days * 1440, andword="")
+        return p.number_to_words(totaltime.days * 1440, andword="") + " minutes"
     raise ValueError("Invalid Input")
 
 
