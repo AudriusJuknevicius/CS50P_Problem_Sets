@@ -10,9 +10,9 @@ def main():
 def date2time(userinput):
     birth = date.fromisoformat(userinput)
     today = date.today()
-    totaltime = today - birth
+    totaltime.days = today - birth
     if not totaltime <=0:
-        return num2words(finaltime = int(totaltime * 24 * 60))
+        return num2words(finaltime = int(totaltime * 1440))
 
 
 
