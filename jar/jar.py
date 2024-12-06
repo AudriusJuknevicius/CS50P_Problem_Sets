@@ -9,7 +9,7 @@ class Jar:
         self._size = 0
         if self.size >= self.capacity:
             raise ValueError("Cookie Jar is full!")
-        elif self.size <=
+        elif self.capacity <= 
         if self.size <= 0:
             raise ValueError("Taking too many cookies!")
 
