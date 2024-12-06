@@ -15,7 +15,7 @@ class Jar:
         return cookies
 
     def deposit(self, n):
-        if n + self._capacity >= 12
+        if n + self._capacity >= 12:
             raise ValueError("Too many cookies!")
         self._size = n + self._size
 
