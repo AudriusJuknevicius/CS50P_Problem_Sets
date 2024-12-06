@@ -3,17 +3,15 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def header(self):
-        # Setting font: helvetica bold 15
-        self.set_font("helvetica", style="B", size=15)
+        # Setting font: helvetica bold 24
+        self.set_font("helvetica", style="B", size=24)
         # Calculating width of title and setting cursor position:
         width = self.get_string_width(self.title) + 6
         self.set_x((210 - width) / 2)
-        # Setting colors for frame, background and text:
-        self.set_draw_color(0, 80, 180)
-        self.set_fill_color(230, 230, 0)
+        # Setting colors for text:
         self.set_text_color(255,255,255)
         # Setting thickness of the frame (1 mm)
-        self.set_line_width(1)
+        self.set_line_width(3)
         # Printing title:
         self.cell(
             width,
