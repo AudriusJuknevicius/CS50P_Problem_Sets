@@ -1,7 +1,5 @@
 #https://cs50.harvard.edu/python/2022/psets/8/jar/
 
-from jar import Jar
-
 
 class Jar:
     def __init__(self, capacity=12):
