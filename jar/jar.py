@@ -11,6 +11,7 @@ class Jar:
 
 
     def __str__(self):
+        cookies = ""
         if self.size != 0:
             cookies = "🍪" * self.size
         return cookies
