@@ -11,7 +11,7 @@ class Jar:
 
 
     def __str__(self):
-        ...
+        return self.size 
 
     def deposit(self, n):
         if n + self._capacity >= 12
