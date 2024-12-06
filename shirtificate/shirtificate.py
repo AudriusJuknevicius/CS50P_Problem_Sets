@@ -26,7 +26,7 @@ class PDF(FPDF):
         # Setting colors for frame, background and text:
         self.set_draw_color(0, 80, 180)
         self.set_fill_color(230, 230, 0)
-        self.set_text_color(220, 50, 50)
+        self.set_text_color(255,255,255)
         # Setting thickness of the frame (1 mm)
         self.set_line_width(1)
         # Printing title:
