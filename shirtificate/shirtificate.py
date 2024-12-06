@@ -14,7 +14,7 @@ def main():
     pdf.image("https://cs50.harvard.edu/python/2022/psets/8/shirtificate/shirtificate.png", x="C",y=+70)
 
     pdf.set_font("helvetica", style="B", size=24)
-    pdf.cell(align="C", centre=True, text=name + " took CS50")
+    pdf.cell(h=120,center="True", text=name + " took CS50")
 
     pdf.output("shirtificate.pdf")
 
