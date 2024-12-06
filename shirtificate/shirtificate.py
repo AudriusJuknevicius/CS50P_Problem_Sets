@@ -43,21 +43,12 @@ class PDF(FPDF):
         # Performing a line break:
         self.ln(10)
 
-    def footer(self):
-        # Setting position at 1.5 cm from bottom:
-        self.set_y(-15)
-        # Setting font: helvetica italic 8
-        self.set_font("helvetica", style="I", size=8)
-        # Setting text color to gray:
-        self.set_text_color(128)
-        # Printing page number
-        self.cell(0, 10, f"Page {self.page_no()}", align="C")
 
     def chapter_title(self, num, label):
         # Setting font: helvetica 12
         self.set_font("helvetica", size=12)
         # Setting background color
-        self.set_fill_color(200, 220, 255)
+        self.set_fill_color(0, 0, 0)
         # Printing chapter name:
         self.cell(
             0,
@@ -93,8 +84,8 @@ class PDF(FPDF):
 
 pdf = PDF()
 pdf.set_title("CS50 Shirtificate")
-pdf.set_author("Jules Verne")
-pdf.output("tuto3.pdf")
+pdf.set_author("Audrius Juknevicius")
+pdf.output("shirtificate.pdf")
 
 if __name__ == "__main__":
     main()
