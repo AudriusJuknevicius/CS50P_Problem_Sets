@@ -1,11 +1,11 @@
 from fpdf import FPDF
 
 def main():
+    name = input("Name: ")
     pdf = FPDF()
     pdf.add_page()
 
     pdf.set_title("CS50 Shirtificate")
-    pdf.set_author("Audrius Juknevicius")
 
     pdf.set_font("helvetica", style="B", size=42)
     pdf.set_text_color(0, 0, 0)
@@ -15,7 +15,7 @@ def main():
 
     pdf.set_font("helvetica", style="B", size=24)
     pdf.set_text_color(255, 255, 255)
-    pdf.text(x=42, y=140, text="Audrius Juknevicius took CS50")
+    pdf.text(align="C", text=name + " took CS50")
 
     pdf.output("shirtificate.pdf")
 
