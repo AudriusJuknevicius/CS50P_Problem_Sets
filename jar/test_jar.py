@@ -20,6 +20,9 @@ def test_deposit():
     jar.deposit(5)
     assert jar.size == 5
 
+    with pytest.raises(ValueError):
+        jar.deposit
+
 
 def test_withdraw():
     jar = Jar()
