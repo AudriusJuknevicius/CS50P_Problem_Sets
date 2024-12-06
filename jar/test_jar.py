@@ -17,7 +17,7 @@ def test_str():
 def test_deposit():
     jar = Jar()
     jar.deposit(5)
-    assert size(jar) == 5
+    assert jar.size == 5
 
 
 def test_withdraw():
