@@ -94,6 +94,4 @@ class PDF(FPDF):
 pdf = PDF()
 pdf.set_title("CS50 Shirtificate")
 pdf.set_author("Jules Verne")
-pdf.print_chapter(1, "A RUNAWAY REEF", "20k_c1.txt")
-pdf.print_chapter(2, "THE PROS AND CONS", "20k_c1.txt")
 pdf.output("tuto3.pdf")
