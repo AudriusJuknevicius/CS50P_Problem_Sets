@@ -15,7 +15,7 @@ def main():
 
     pdf.set_font("helvetica", style="B", size=24)
     pdf.set_text_color(255, 255, 255)
-    pdf.text(align="C", text=name + " took CS50")
+    pdf.multi_cell(align="C", text=name + " took CS50")
 
     pdf.output("shirtificate.pdf")
 
