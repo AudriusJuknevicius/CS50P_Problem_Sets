@@ -32,5 +32,4 @@ class Jar:
 
     @property
     def size(self):
-
         return self._size
