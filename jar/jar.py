@@ -7,8 +7,7 @@ class Jar:
     def __init__(self, capacity=12):
         self._capacity = capacity
         self._size = 0
-        capacity return _capacity
-        size return _size
+
 
 
     def __str__(self):
@@ -31,5 +30,5 @@ class Jar:
 
     @property
     def size(self):
-        
+
         return self._size
