@@ -2,6 +2,14 @@
 
 
 class Jar:
+    """
+    A class to represent a jar of cookies.
+
+    Attributes:
+        capacity (int): Maximum number of cookies the jar can hold.
+        size (int): Current number of cookies in the jar.
+    """
+
     def __init__(self, capacity=12):
         self._capacity = capacity
         self._size = 0
