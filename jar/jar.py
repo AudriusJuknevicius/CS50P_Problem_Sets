@@ -9,7 +9,6 @@ class Jar:
         self._size = 0
 
 
-
     def __str__(self):
         if self.size not 0:
             🍪 = x * self.size
