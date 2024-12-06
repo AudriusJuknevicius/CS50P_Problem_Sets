@@ -60,12 +60,13 @@ class PDF(FPDF):
         self.cell(0, 5, "(end of excerpt)")
 
     def print_chapter(self, num, title, filepath):
-        self.add_page("https://cs50.harvard.edu/python/2022/psets/8/shirtificate/shirtificate.png")
+        self.add_page()
         self.chapter_title(num, title)
         self.chapter_body(filepath)
 
 
 pdf = PDF()
+pdf.image("https://cs50.harvard.edu/python/2022/psets/8/shirtificate/shirtificate.png")
 pdf.set_title("CS50 Shirtificate")
 pdf.set_author("Audrius Juknevicius")
 pdf.output("shirtificate.pdf")
