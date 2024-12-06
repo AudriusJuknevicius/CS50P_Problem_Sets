@@ -12,20 +12,21 @@ class Jar:
 
     def __str__(self):
         cookies = ""
-        if self.size != 0:
+            if self.size != 0:
             cookies = "🍪" * self.size
         return cookies
 
+
     def deposit(self, n):
-        if n + self._size >= self._capacity:
+        if self._size + n > self._capacity:
             raise ValueError("Too many cookies!")
-        self._size + n
+        self._size += n
 
 
     def withdraw(self, n):
         if self._size - n <= 0:
             raise ValueError("No cookies left!")
-        self._size - n
+        self._size -= n
 
     @property
     def capacity(self):
