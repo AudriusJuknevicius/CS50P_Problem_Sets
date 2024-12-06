@@ -95,3 +95,6 @@ pdf = PDF()
 pdf.set_title("CS50 Shirtificate")
 pdf.set_author("Jules Verne")
 pdf.output("tuto3.pdf")
+
+if __name__ == "__main__":
+    main()
