@@ -10,9 +10,9 @@ class Jar:
 
 
     def __str__(self):
-        if self.size not 0:
-            🍪 = x * self.size
-        return self.size
+        if self.size != 0:
+            cookies = "🍪" * self.size
+        return cookies
 
     def deposit(self, n):
         if n + self._capacity >= 12
